@@ -11,5 +11,14 @@ let fulldate = dayname + ", " + monthName + " " * d.getDate() + ", " + year;
 document.getElementById("currentDate").textContent = fulldate;
 
 try {
-    let 
+    let options = {
+        weekday : "long",
+        day: "numeric",
+        month: "long"
+        year: "numeric"
+    };
+    document.getElementById("currentday2").textContent = New Date().LocaleDayString("en-US", options);;
+    catch (e) {
+        alert("Error with your code or your browser")
+    }  
 }
