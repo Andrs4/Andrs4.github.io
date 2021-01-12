@@ -14,11 +14,11 @@ try {
     let options = {
         weekday : "long",
         day: "numeric",
-        month: "long"
-        year: "numeric"
+        month: "long",
+        year: "numeric",
     };
     document.getElementById("currentday2").textContent = New Date().LocaleDayString("en-US", options);;
-    catch (e) {
-        alert("Error with your code or your browser")
+catch (e) {
+    alert("Error with your code or your browser")
     }  
 }

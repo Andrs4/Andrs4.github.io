@@ -1,5 +1,5 @@
 window.addEventListener('load', (event)=>{
-    const update = document.querySelector('#lastupdated');
+    const update = document.querySelector('#currentDate');
     update.textContent = document.lastModified;
 
     const year = document.querySelector('#copyrightyear');
