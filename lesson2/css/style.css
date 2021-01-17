@@ -1,44 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Patrick+Hand&display=swap');
 
-@media only screen and(min-width: 20em ){
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    font-family: 'Patrick Hand', cursive;
+    margin: 16px 16px 16px 16px;
+    padding-bottom: 16px;
+}
+
+section {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    border-radius: 2px; 
+    text-size-adjust: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0.1rem; 
+}
+
+main image {
+    margin: 0.5rem;
+}
+footer {
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+@media (min-width: 37.5em) {
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
-        font-size: 0.8rem;
-    }
-
-    main section {
-        margin: 0.5rem;
-        border: 1px solid #bbb;
-        padding: 0.1rem; 
-    }
-
-    main image {
-        margin: 0.5rem;
-    }
-}
-
-
-@media only screen and(min-width: 37.5em) {
-
-    main {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
     }
 
-    section:nth-child(3){
+    
+    .section1 {
+        grid-column: 1;
+    }
+    .section2 {
+        grid-column: 2;
+    }
+    .section3 {
         grid-column: span 2;
     }
 }
 
 
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
 
     main{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    section:nth-child(3){
-        grid-column: span 1;
+    .section1 {
+        grid-column: 1;
     }
+    .section2 {
+        grid-column: 2;
+    }
+    .section3 {
+        grid-column: 3;
+    }
+    main p {
+        font-size: 1.5em;
+    }
+    
 }
