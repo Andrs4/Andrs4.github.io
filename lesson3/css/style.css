@@ -1,0 +1,15 @@
+body {
+    margin: 5rem;
+  }
+  header, footer {
+    background-color:#50514f;
+    color: white;
+
+  }
+.logo {
+    width: 10em;
+}
+
+.logo-image{
+    width:50em;
+}
