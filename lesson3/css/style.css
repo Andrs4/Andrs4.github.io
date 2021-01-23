@@ -34,9 +34,27 @@ main {
 p {
     font-family: 'Merriweather Sans', sans-serif;
 }
+
+/* ===================Typography table================= */
 table {
     padding: 2em;
 }
+#site-header {
+    font-size: 40px;
+    color: White;
+    background-color: #50514f;
+}
+#primary-nav {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+#footer-nav {
+    font-size: 20px;
+    color: white;
+    background-color: #50514f;
+}
+
 @media (min-width: 60em) {
     
     header {

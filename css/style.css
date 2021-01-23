@@ -24,4 +24,6 @@ header img{
   height: auto;
 }
 
-#currentdate {color: rgba(50,50,250,1);}
+#currentdate {
+  color: rgba(50,50,250,1);
+}
