@@ -8,7 +8,6 @@ body {
 header, footer {
     background-color:#50514f;
     color: white;
-    text-align: center;
   }
 .logo {
     width: 10em;
@@ -20,6 +19,7 @@ header, footer {
 nav {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 li {
@@ -38,6 +38,7 @@ table {
     padding: 2em;
 }
 @media (min-width: 60em) {
+    
     header {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -51,4 +52,5 @@ table {
     main {
         padding: 0 0 0 2em;
     }
+    
 }
