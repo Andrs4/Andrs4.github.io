@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Merriweather:ital,wght@1,900&display=swap');
+
+
 body {
     margin: 5rem;
+    font-family: 'Merriweather', serif;
   }
-  header, footer {
+header, footer {
     background-color:#50514f;
     color: white;
-
+    text-align: center;
   }
 .logo {
     width: 10em;
@@ -12,4 +16,39 @@ body {
 
 .logo-image{
     width:50em;
+}
+nav {
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+nav a:hover {
+    color: yellow;
+}
+main {
+    background-color: #7ac2e1;
+}
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+table {
+    padding: 2em;
+}
+@media (min-width: 60em) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .logo {
+        grid-column: 1;
+    }
+    nav {
+        grid-column: 1 /-1;
+    }
+    main {
+        padding: 0 0 0 2em;
+    }
 }
