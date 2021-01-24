@@ -39,6 +39,9 @@ p {
 table {
     padding: 2em;
 }
+main img {
+    width: 70%;
+}
 #site-header {
     font-size: 40px;
     color: White;
