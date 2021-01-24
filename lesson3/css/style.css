@@ -40,7 +40,7 @@ table {
     padding: 2em;
 }
 main img {
-    width: 70%;
+    width: 50%;
 }
 #site-header {
     font-size: 40px;
@@ -49,7 +49,7 @@ main img {
 }
 #primary-nav {
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     background-color: black;
 }
 #footer-nav {
@@ -57,7 +57,22 @@ main img {
     color: white;
     background-color: #50514f;
 }
+#heading1 {
+    font-size: 30px;
+}
+#heading2 {
+    font-size: 25px;
+}
+#heading3 {
+    font-size: 20px;
+}
+#paragraph {
+    font-size: 16px;
+}
 
+footer {
+    text-align: center;
+}
 @media (min-width: 60em) {
     
     header {
