@@ -1,92 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Merriweather:ital,wght@1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Merriweather:ital,wght@1,900&display=swap");
 
 body {
-    margin: 5rem;
-    font-family: 'Merriweather', serif;
-  }
-header, footer {
-    background-color:#50514f;
-    color: white;
-  }
-.logo {
-    width: 10em;
+  font-family: "Merriweather", serif;
 }
-
-.logo-image{
-    width:50em;
+header,
+footer {
+  background-color: #50514f;
+  color: white;
+}
+.logo {
+  width: 10em;
 }
 nav {
-    background-color: black;
-    color: white;
-    text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 nav a:hover {
-    color: yellow;
+  color: yellow;
 }
 main {
-    background-color: #7ac2e1;
+  background-color: #7ac2e1;
 }
 p {
-    font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 /* ===================Typography table================= */
 table {
-    padding: 2em;
+  padding: 2em;
 }
 main img {
-    width: 50%;
+  width: 50%;
 }
 #site-header {
-    font-size: 40px;
-    color: White;
-    background-color: #50514f;
+  font-size: 40px;
+  color: White;
+  background-color: #50514f;
 }
 #primary-nav {
-    font-size: 30px;
-    color: #ffffff;
-    background-color: black;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: black;
 }
 #footer-nav {
-    font-size: 20px;
-    color: white;
-    background-color: #50514f;
+  font-size: 20px;
+  color: white;
+  background-color: #50514f;
 }
 #heading1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 #heading2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 #heading3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 #paragraph {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 @media (min-width: 60em) {
-    
-    header {
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
-    .logo {
-        grid-column: 1;
-    }
-    nav {
-        grid-column: 1 /-1;
-    }
-    main {
-        padding: 0 0 0 2em;
-    }
-    
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .logo {
+    grid-column: 1;
+  }
+  nav {
+    grid-column: 1 /-1;
+  }
+  main {
+    padding: 0 0 0 2em;
+  }
 }
