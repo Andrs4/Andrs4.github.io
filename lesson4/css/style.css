@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani&display=swap');
+
 body {
-  font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif;
 }
+
 main, footer{
   display: block;
   max-width: 960px;
   margin: 1rem auto;
+}
+p{
+  font-family: 'Rajdhani', sans-serif;
 }
 header,
 footer {
@@ -34,6 +40,7 @@ header h1{
     margin-top: 64px;
     margin-bottom: 0;
 }
+
 .motto{
     padding-left: 25px;
 }
