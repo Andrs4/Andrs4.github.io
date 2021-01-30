@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <title>Checking Weather</title>
-    <link href="css/nstyle.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -18,13 +20,14 @@
         </section>
     </header>
     <nav>
-          <ul>
+          <ul class="navigation">
+              <li><a href="#"onclick="toggleMenu()">&#9776; Menu</a></li>
               <li><a href="preston-4.html">Home</a></li>
-              <li><a href="">Preston</a></li>
-              <li><a href="">Soda Springs</a></li>
-              <li><a href="">Fish Haven</a></li>
-              <li><a href="">Storm Center</a></li>
-              <li><a href="">Gallery</a></li>
+              <li><a href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="#">Storm Center</a></li>
+              <li><a href="#">Gallery</a></li>
           </ul>
     </nav>
     <main>
@@ -39,7 +42,7 @@
       ©<span id="currentYear"> </span> &nbsp| &nbsp;
       <span> Andres J Soruco</span> &nbsp| &nbsp; <span>Bolivia</span> &nbsp|
       &nbsp;
-      <a href="https://www.byui.edu/online">BYUi Online</a>
+      <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
       <p>Last Updated: <span id="currentDate"></span></p>
     </footer>
   </body>

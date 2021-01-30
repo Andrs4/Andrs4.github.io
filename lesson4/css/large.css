@@ -1,0 +1,13 @@
+@media (min-width: 60em) {
+
+    header, nav, main, footer{
+      font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navigation li a{
+        padding: 8px;
+    }
+}
