@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Checking Weather</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+        <picture>
+            <img class="logo" src="images/weather_logo.png" alt="Logo-weather"/>
+        </picture>
+        <section class="heading">
+            <h1>Cheking Weather</h1>
+            <div class="motto">Let the weather help you, not annoy you!</div>
+        </section>
+    </header>
+    <nav>
+          <ul class="navigation">
+              <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="preston-4.html">Home</a></li>
+              <li><a href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="#">Storm Center</a></li>
+              <li><a href="#">Gallery</a></li>
+          </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="Hero-Placeholder">
+          <img src="images/hero_image.jpg" alt="Urban place">
+        </div>
+        <div class="full-forecast">
+          <h3>5 Day Forecast</h3>
+          <div class="forecast">
+          <img id="forecast" src="images/forecast.jpg" alt="Forecast image">
+          </div>
+        </div>
+        <div class="article">
+          <h2>Article</h2>
+          <img id="girl-street" src="images/pexels-grisha-stern-2796232-01.jpg" alt="girl at urban place">
+        </div>
+        <div class="contentBox">Contact Information</div>
+    </main>
+    <footer>
+      <script src="js/date.js"></script>
+      ©<span id="currentYear"></span> &nbsp; | &nbsp;
+      <span> Andres J Soruco</span> &nbsp; | &nbsp; <span>Bolivia</span> &nbsp; |
+      &nbsp;
+      <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+      <p>Last Updated: <span id="currentDate"></span></p>
+    </footer>
+  </body>
+</html>

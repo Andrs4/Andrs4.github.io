@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani&display=swap');
+
+body {
+    font-family: "Merriweather", serif;
+    width: 100%;
+}
+
+main, footer{
+  display: block;
+  max-width: 900px;
+  margin: 1rem auto;
+}
+
+img {
+  width: 100%;
+}
+p{
+  font-family: 'Rajdhani', sans-serif;
+}
+h1, h2, h3, h4{
+  text-align: center;
+}
+header,
+footer {
+  background-color: #50514f;
+  color: white;
+}
+header {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    max-width:100%;
+}
+.logo {
+  width: 15em;
+
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    padding: 5px 0;
+
+}
+header h1{
+    padding-left: 25px;
+    margin-top: 64px;
+    margin-bottom: 0;
+}
+
+.motto{
+    padding-left: 25px;
+}
+.full-forecast {
+  display: none;
+}
+/* ===============Main=============== */
+.article {
+  display: block;  
+  align-content: center;
+  text-align: center;
+}
+#girl-street {
+  margin: 1rem auto;
+  width: 50%;
+}
+/* ================footer================ */
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.navigation {
+  display: block;
+  text-align: center;
+  background-color: black;
+  padding: 2px;
+  margin: 0;
+}
+
+.navigation li:first-child{
+  display: block;
+}
+.navigation li{
+  display:none;
+}
+.responsive li {
+  display:block;
+  padding: 4px;
+}
+
+.navigation li a{
+  display: block;
+  text-decoration-line: none;
+  color:white;
+}
+.navigation li a:hover {
+  background-color: skyblue;
+  color: yellow;
+}
+
+

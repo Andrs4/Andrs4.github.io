@@ -1,0 +1,36 @@
+@media only screen and (min-width: 32.5em) {
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column: 1 /-1;
+    }
+    .navigation li:first-child{
+      display: none;
+    }
+    .navigation li {
+        display: list-item;
+        list-style: none;
+    }
+    
+    header img{
+        box-shadow: 0 0 30px #444;
+        float: right;
+        border-radius: 0 10px 0 0;
+    }
+    .navigation li a{
+        padding: 4px;
+    }
+    .full-forecast {
+        display: block;
+    }
+    .forecast {
+        background-color: rgba(70, 206, 255, 0.361);
+        padding: 16px;
+      }
+    #forecast {
+      display: block;
+      width: 60%;
+      margin: 1rem auto;
+    }
+}
