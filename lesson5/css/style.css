@@ -97,8 +97,7 @@ header h1{
   display: none;
 }
 .contact-info section img {
-  display: inline-flex;
-  flex-direction: row;
+  display: inline;
   width: 1.5rem;
 }
 
