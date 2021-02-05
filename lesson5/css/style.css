@@ -96,6 +96,11 @@ header h1{
 .contact-info img {
   display: none;
 }
+.contact-info section img {
+  display: inline-flex;
+  flex-direction: row;
+  width: 1.5rem;
+}
 
 footer {
   text-align: center;
