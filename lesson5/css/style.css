@@ -99,6 +99,7 @@ header h1{
 .contact-info section img {
   display: inline;
   width: 1.5rem;
+  padding: 5px;
 }
 
 footer {
