@@ -33,7 +33,6 @@ header {
 }
 .logo {
   width: 15em;
-
 }
 .heading {
     display: flex;
@@ -52,25 +51,62 @@ header h1{
 .motto{
     padding-left: 25px;
 }
+/* ===============Main=============== */
+
+.hero-placeholder {
+  position:relative;
+  
+}
+.weather-summary {
+  position: absolute;
+  font-size: 70%;
+  top: 10px;
+  left: 20px;
+  background: radial-gradient(white, skyblue);
+  border: 1px solid white;
+  width: 200px ;
+  padding: .9rem;
+  box-shadow: 0 0 30px #777;
+}
+.weather-summary h3 {
+  font-size: 100%;
+  text-align: center;
+}
+
 .full-forecast {
   display: none;
 }
-/* ===============Main=============== */
+
 .article {
   display: block;  
   align-content: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 40px;
 }
+
 #girl-street {
   margin: 1rem auto;
   width: 50%;
+  max-width: 250px;
+  box-shadow: 0 0 10px #222;
 }
 /* ================footer================ */
-footer {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
+.contact-info img {
+  display: none;
 }
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+}
+footer div:nth-child(2) {
+  padding-top: 10px;
+}
+/* ======== Nav ======= */
 .navigation {
   display: block;
   text-align: center;

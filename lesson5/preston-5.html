@@ -33,28 +33,76 @@
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <div class="Hero-Placeholder">
+        <div class="hero-placeholder">
           <img src="images/hero_image.jpg" alt="Urban place">
+          <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <p><strong>Currently: </strong>Sunny</p>
+            <p><strong>High: </strong>70° F</p>
+            <p><strong>Wind Chill: </strong>°F</p>
+            <p><strong>Humidity: </strong>69%</p>
+            <p><strong>Wind Speed: </strong>5mph</p>
+          </section>
         </div>
         <div class="full-forecast">
           <h3>5 Day Forecast</h3>
           <div class="forecast">
-          <img id="forecast" src="images/forecast.jpg" alt="Forecast image">
+          <!-- <img id="forecast" src="images/forecast.jpg" alt="Forecast image"> //This is an optional image to place instead the table-->
+            <table>
+              <tr>
+                <th>Mon</th>
+                <th>Twe</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+              </tr>
+              <tr>
+                <td><img src="images/2275.png" alt="cloud and sun"></td>
+                <td><img src="images/2275.png" alt="cloud and sun"></td>
+                <td><img src="images/2275.png" alt="cloud and sun"></td>
+                <td><img src="images/2275.png" alt="cloud and sun"></td>
+                <td><img src="images/2275.png" alt="cloud and sun"></td>
+              </tr>
+                <td>61° F</td>
+                <td>65° F</td>
+                <td>67° F</td>
+                <td>60° F</td>
+                <td>69° F</td>
+            </table>
           </div>
         </div>
         <div class="article">
-          <h2>Article</h2>
           <img id="girl-street" src="images/pexels-grisha-stern-2796232-01.jpg" alt="girl at urban place">
+          <h2>Article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        <div class="contentBox">Contact Information</div>
     </main>
     <footer>
-      <script src="js/date.js"></script>
-      ©<span id="currentYear"></span> &nbsp; | &nbsp;
-      <span> Andres J Soruco</span> &nbsp; | &nbsp; <span>Bolivia</span> &nbsp; |
-      &nbsp;
-      <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
-      <p>Last Updated: <span id="currentDate"></span></p>
+      <div class="contact-info">
+        <img src="images/preston_map.jpg">
+        <section>
+          <p><strong>Checking Weather Site</strong></p>
+          <p>&#128204 30N ft N</p>
+          <p>Preston ID 83263</p>
+          <br>
+          <p>&#128383 999 999 9999</p>
+          <p>&#128231 mam20002@byui.edu</p>
+        </section>
+      </div>
+      <div>
+        <script src="js/date.js"></script>
+        ©<span id="currentYear"></span> &nbsp; | &nbsp;
+        <span> Andres J Soruco</span> &nbsp; | &nbsp; <span>Bolivia</span> &nbsp; |
+        &nbsp;
+        <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+        <p>Last Updated: <span id="currentDate"></span></p>
+      </div>
     </footer>
   </body>
 </html>

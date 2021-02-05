@@ -11,4 +11,7 @@
     .navigation li a{
         padding: 8px;
     }
+    footer {
+        margin-top: initial;
+    }
 }
