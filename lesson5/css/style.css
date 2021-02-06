@@ -31,14 +31,14 @@ header div {
     align-content: center;
     max-width:100%;
 }
-.hide {
-  display: none;
-}
 .banner {
   background-color: skyblue;
   padding: 2em;
   text-align: center;
   color: yellow;
+}
+.hide {
+  display: none;
 }
 
 .logo {

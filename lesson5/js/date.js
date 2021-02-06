@@ -1,11 +1,3 @@
-window.onload = function toggleAnnouncement() {
-    let day = new Date();
-    let banner = day.getDay();
-
-    if (banner != 5) {
-        document.getElementById("pancakes").classList.toggle("hide");
-    }
-}
 
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
