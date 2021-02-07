@@ -1,10 +1,10 @@
 @media (min-width: 60em) {
 
-    header, main, footer{
-      font-size: 1.8rem;
+    header, main{
+      font-size: 1.7rem;
     }
     nav {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     h1, h2, h3, h4 p{
         font-size: 2rem;
@@ -16,5 +16,6 @@
     }
     footer {
         margin-top: initial;
+        font-size: 1.5rem;
     }
 }

@@ -76,7 +76,6 @@ header h1{
   border: 1px solid white;
   width: 200px ;
   padding: .9rem;
-  box-shadow: 0 0 30px #777;
 }
 .weather-summary h3 {
   font-size: 100%;
