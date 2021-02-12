@@ -17,8 +17,8 @@
         <br> 9:00 a.m. Saturday at the city park pavilion.
       </aside>
       <div>
-        <picture>
-            <img class="logo" src="images/weather_logo.png" alt="Logo-weather"/>
+        <picture class="logo">
+          <img  src="images/rsz_weather_logo.png" alt="Logo-weather"/>
         </picture>
         <section class="heading">
             <h1>Cheking Weather</h1>
@@ -40,7 +40,13 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero-placeholder">
-          <img src="images/hero_image.jpg" alt="Urban place">
+          <picture>
+            <source srcset="images/wdd230_image_franklinoriginal_1_medium.jpg" 
+            media="(min-width:500px) and (max-width: 799px)">
+              <source srcset="images/rsz_wdd230_image_franklinoriginal_1.jpg" 
+              media="(min-width: 800px)"> 
+            <img src="images/wdd230_image_franklinoriginal_1_small.jpg" alt="Urban place">
+          </picture>
           <section class="weather-summary">
             <h3>Weather Summary</h3>
             <p><strong>Currently: </strong>Sunny</p>
@@ -78,7 +84,7 @@
           </div>
         </div>
         <div class="article">
-          <img id="girl-street" src="images/pexels-grisha-stern-2796232-01.jpg" alt="girl at urban place">
+          <img id="girl-street" src="images/rsz_pexels-grisha-stern-2796232-01.jpg" alt="girl at urban place">
           <h2>Article</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -91,7 +97,7 @@
     </main>
     <footer>
       <div class="contact-info">
-        <img src="images/preston_map.jpg">
+        <img src="images/rsz_preston_map.jpg">
         <section>
           <p><strong>Checking Weather Site</strong></p>
           <p>&#128204 30N ft N</p>
@@ -99,8 +105,9 @@
           <br>
           <p>&#128383 999 999 9999</p>
           <p>&#128231 mam20002@byui.edu</p>
-          <img src="images/facebook_logo.png"><img src="images/instagram_logo.png">
-          <img src="images/whatsapp_logo.png">
+          <img src="images/rsz_facebook_logo.png">
+          <img src="images/rsz_instagram_logo.png">
+          <img src="images/rsz_whatsapp_logo.png">
         </section>
       </div>
       <div>
