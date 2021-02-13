@@ -53,7 +53,7 @@
             <p><strong>High: </strong>70° F</p>
             <p><strong>Wind Chill: </strong>°F</p>
             <p><strong>Humidity: </strong>69%</p>
-            <p><strong>Wind Speed: </strong>5mph</p>
+            <p id="speed"><strong>Wind Speed: </strong>5mph</p>
           </section>
         </div>
         <div class="full-forecast">
@@ -75,11 +75,11 @@
                 <td><img src="images/2275.png" alt="cloud and sun"></td>
                 <td><img src="images/2275.png" alt="cloud and sun"></td>
               </tr>
-                <td>61° F</td>
-                <td>65° F</td>
-                <td>67° F</td>
-                <td>60° F</td>
-                <td>69° F</td>
+                <td class="temperature">61° F</td>
+                <td class="temperature">65° F</td>
+                <td class="temperature">67° F</td>
+                <td class="temperature">60° F</td>
+                <td class="temperature">69° F</td>
             </table>
           </div>
         </div>
@@ -119,5 +119,9 @@
         <p>Last Updated: <span id="currentDate"></span></p>
       </div>
     </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        Webfont.load({google: {families: ["Rajdhani"]}}); 
+      </script>
   </body>
 </html>
