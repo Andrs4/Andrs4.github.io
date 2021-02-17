@@ -1,5 +1,9 @@
-
-
+main {
+    display: block;
+}
+body img {
+    flex-flow: column wrap;
+}
 article img[data-src] {
     filter: blur(0.2em) ;
 }
