@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+.set-of-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 300px;
+}
+.set-of-images picture img {
+    grid-column: auto;
+    width: 100%;
+}
+img[data-src] {
+    filter: blur(0.2em) ;
+}
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

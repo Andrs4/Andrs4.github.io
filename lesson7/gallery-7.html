@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Gallery Weather Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <aside onload="toggleAnnouncement()" id="pancakes" class="banner hide">
+          Saturday = Preston Pancakes in the Park!
+          <br> 9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+        <div>
+          <picture class="logo">
+            <img  src="images/rsz_weather_logo.png" alt="Logo-weather"/>
+          </picture>
+          <section class="heading">
+              <h1>Cheking Weather</h1>
+              <div class="motto">Let the weather help you, not annoy you!</div>
+          </section>
+        </div>
+      </header>
+      <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+      </nav>
+      <main>
+          <h1>Weather Gallery</h1>
+          <div class="set-of-images">
+            <picture>
+                <img class="shadow" src="gallery/rsz_1pexels-binyamin-mellish-108941.jpg" data-src="" alt="after raining">
+
+            </picture>
+            <picture>
+                <img class="shadow" src="gallery/rsz_1pexels-lisa-fotios-1107717.jpg" data-src="" alt="sunny day">
+
+            </picture>
+            <picture>
+                <img class="shadow" src="gallery/rsz_pexels-andre-furtado-1162251.jpg" data-src="" alt="stormy day">
+
+            </picture>
+            <picture>
+                <img class="shadow" src="gallery/rsz_pexels-efdal-yildiz-917494.jpg" data-src="" alt="fresh morning">
+
+            </picture>
+            <picture>
+                <img class="shadow" src="gallery/rsz_pexels-freestocksorg-839462.jpg" data-src="" alt="snowy day">
+
+            </picture>
+            <picture>
+                <img class="shadow" src="gallery/rsz_pexels-mabel-amber-125457.jpg" data-src="" alt="hot day">
+
+            </picture>
+            <!-- <picture> 
+                <img src="gallery/rsz_pexels-pixabay-38537.jpg" data-src="" alt="fall day">
+
+            </picture> -->
+        </div>
+      </main>
+
+
+      <footer>
+        
+        <div>
+          <script src="js/date.js"></script>
+          ©<span id="currentYear"></span> &nbsp; | &nbsp;
+          <span> Andres J Soruco</span> &nbsp; | &nbsp; <span>Bolivia</span> &nbsp; |
+          &nbsp;
+          <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+          <p>Last Updated: <span id="currentDate"></span></p>
+        </div>
+      </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          Webfont.load({google: {families: ["Rajdhani"]}}); 
+        </script>
+    
+</body>
+</html>
