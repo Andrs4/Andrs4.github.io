@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy Loading</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -10,24 +11,24 @@
     <main>
         <h1>Lazy Loading</h1>
         <div class="set-of-images">
-            <div>
-                <img src='images/rsz_pexels-grisha-stern-2796232-01.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
-            <div>
-                <img src='images/rsz_preston_map.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
-            <div>
-                <img src='images/rsz_wdd230_image_franklinoriginal_1.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
-            <div>
-                <img src='images/wdd230_image_franklinoriginal_1_medium.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
-            <div>
-                <img src='images/wdd230_image_franklinoriginal_1_small.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
-            <div>
-                <img src='images/rsz_pexels-grisha-stern-2796232-01.jpg' data-src='images/placeholder-300x400.jpg' alt="girl">
-            </div>
+            <picture>
+                <img data-src='images/rsz_pexels-grisha-stern-2796232-01.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
+            <picture>
+                <img data-src='images/rsz_preston_map.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
+            <picture>
+                <img data-src='images/rsz_wdd230_image_franklinoriginal_1.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
+            <picture>
+                <img data-src='images/wdd230_image_franklinoriginal_1_medium.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
+            <picture>
+                <img data-src='images/wdd230_image_franklinoriginal_1_small.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
+            <picture>
+                <img data-src='images/rsz_pexels-grisha-stern-2796232-01.jpg' src='images/placeholder-300x400.jpg' alt="girl">
+            </picture>
         </div>
     </main>
         <script src="js/script.js" defer></script>
