@@ -1,8 +1,14 @@
-.set-of-images {
-    display: grid;
-    grid-template-columns: 1fr;
+main {
+    text-align: center;
 }
-
+.set-of-images {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
 img[data-src] {
     filter: blur(0.2em) ;
 }
