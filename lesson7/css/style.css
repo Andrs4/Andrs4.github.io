@@ -160,10 +160,15 @@ footer div:nth-child(2) {
   grid-template-columns: 1fr; 
 }
 
-picture img {
+.img_gallery {
+  margin-bottom: 10px;
+}
+.shadow {
   padding-bottom: 20px;
   margin-bottom: 15px;
   box-shadow: 1px 1px 4px 1px #888;
   border-radius: 3px 0px 0px 3px;
   max-width: 400px;
+  font-size: 0.8rem;
+  text-align: center;
 }
