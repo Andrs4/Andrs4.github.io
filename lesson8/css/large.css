@@ -14,23 +14,18 @@
     .navigation li a{
         padding: 8px;
     }
+
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+
+    
     footer {
         margin-top: initial;
         font-size: 1.5rem;
     }
 
-    /* === Gallery Page === */
-    .set-of-images {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        
-    }
-    picture {
-        grid-column: auto;
-        width: 100%;
-    }
-    .shadow:hover {
-        box-shadow: 0 0 50px #333;
-    }
+    
 }

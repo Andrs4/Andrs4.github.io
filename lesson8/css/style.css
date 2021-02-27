@@ -8,7 +8,7 @@ body {
 main, footer{
   display: block;
   max-width: 900px;
-  margin: 1rem auto;
+  margin: 1rem 5px;
 }
 
 img {
@@ -88,10 +88,19 @@ header h1{
 }
 
 /* ===============Main=============== */
+
+fieldset {
+  background-color: rgba(105, 206, 235, 0.05);
+}
+
+label {
+  font-size: 1rem ;
+}
+
 form fieldset {
   margin: 2rem 0;
   border: 1px solid #445;
-  border-radius: 10p;
+  border-radius: 5px;
   padding: .5rem 2%;
   max-width: 900px;
 }
@@ -105,7 +114,7 @@ form label.top, form div {
   display: block;
   padding-top: 1rem;
   color: #9c2c13;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 form label.top input, form label.top select {
@@ -123,7 +132,7 @@ form label.top input, form label.top select {
 
 form label.sbs {
   display: block;
-  padding: .75rem 0;
+  padding: .75rem;
   color: #555;
 }
 form input.submitBtn {
@@ -132,9 +141,9 @@ form input.submitBtn {
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
-  margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+  margin: 0 auto;
 }
 
 form label.top input:required {
@@ -144,8 +153,10 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 textarea {
-  max-width: 100%;
+  max-width: 70%;
+  padding: .55rem;
 }
+
 
 /* ================footer================ */
 .contact-info img {
