@@ -1,0 +1,43 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 100% ;
+}
+
+h1 {
+    background-color: silver;
+    padding: 16px;
+}
+.cards {
+    display: grid;
+    margin: 0 auto;
+    background-color: rgba(100, 149, 237, 0.5);
+}
+.cards section {
+    text-align: center;
+    margin: 2px;
+    padding: 0 auto;
+    border: black solid;
+}
+
+.cards section img {
+    max-width: 200px;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+@media (min-width: 60em) {
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
