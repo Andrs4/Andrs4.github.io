@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX and JSON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Select a country: </h1>
+        <button id="mexico" onclick="countryFunc(id)">Mexico</button>
+        <button id="usa" onclick="countryFunc(id)">USA</button>
+        <button id="canada" onclick="countryFunc(id)">Canada</button>
+        <button id="russia" onclick="countryFunc(id)">Russia</button>
+        <div id="show"></div>
+    </div>
+    <div>
+        <label>Enter the filename or URL <input id="inputFile" name="inputFile" type="text" value="json.txt"></label>
+        <button id="requestFile" onclick="requestFile()">Request File</button>
+        <div id="showInfo"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    max-width: 900px;
+}
+
+div {
+    display: block;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+}
+p{
+    margin: 2px
+}
