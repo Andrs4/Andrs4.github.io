@@ -94,6 +94,7 @@ header h1{
   flex-direction: row;
   background-color: rgba(100, 149, 237, 0.5);
 }
+
 .cards section {
   max-width: 600px;
   margin: .5rem auto;
@@ -101,6 +102,8 @@ header h1{
   background-color: #eee;
 	display: flex;
 	flex-wrap: wrap;
+
+  padding: 10px;
   /* text-align: center;
   margin: 2px;
   padding: 0 auto;
