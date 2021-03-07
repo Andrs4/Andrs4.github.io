@@ -68,7 +68,7 @@ fetch(requestURL)
             h5.textContent = `${town.motto}`;
             h5.style.margin = '2px 0';
             p2.textContent = `Year Founded: ${town.yearFounded}`;
-            p3.textContent = `Population: ${town.population}`;
+            p3.textContent = `Population: ${town.currentPopulation}`;
             p4.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
             pMargin = '1rem 0 0 0' // variable to hold margin of paragraphs
             p2.style.margin = '2rem 0 0 0'
