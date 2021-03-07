@@ -55,7 +55,7 @@ fetch(requestURL)
           let divText = document.createElement("div");
           let card = document.createElement("section");
           let h2 = document.createElement("h2");
-          let h3 = document.createElement("h3");
+          let h5 = document.createElement("h5");
           let p2 = document.createElement("p");
           let p3 = document.createElement("p");
           let p4 = document.createElement("p");
@@ -64,18 +64,27 @@ fetch(requestURL)
           if (town.name == "Preston" || town.name == "Fish Haven" || town.name == "Soda Springs") {
             // template literals
             h2.textContent = `${town.name}`;
-            h3.textContent = `${town.motto}`;
+            h2.style.margin = '2px 0'
+            h5.textContent = `${town.motto}`;
+            h5.style.margin = '2px 0';
             p2.textContent = `Year Founded: ${town.yearFounded}`;
             p3.textContent = `Population: ${town.population}`;
-            p4.textContent = `Annual Rain Fall: ${town.averageRainfall}`
-            townimg.setAttribute('src' , town.photo);
+            p4.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
+            pMargin = '1rem 0 0 0' // variable to hold margin of paragraphs
+            p2.style.margin = '2rem 0 0 0'
+            p3.style.margin = pMargin
+            p4.style.margin = pMargin
+            divText.setAttribute('class', "content");
+
+            townimg.setAttribute('src' , `images/${town.photo}`);
             townimg.setAttribute("alt", `Prophet ${town.name} photo`);
             townimg.setAttribute("loading", "lazy")
             townimg.style.boxShadow = '0 0 30px #333';
             townimg.style.width = '200px';
             
+
             divText.append(h2);
-            divText.append(h3);
+            divText.append(h5);
             divText.append(p2);
             divText.append(p3);
             divText.append(p4);
@@ -83,6 +92,15 @@ fetch(requestURL)
             card.append(townimg);
             cards.append(card);
           }
+
+          function addingOdds(altVariable){
+            divText.setAttribute('class', "data");
+            if(altVariable%2==0){
+                townimg.setAttribute('class', "derecha");
+                divText.setAttribute('class', "data2");
+            }
+          }
+
       });
 
       

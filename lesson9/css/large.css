@@ -18,9 +18,15 @@
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
+    .cards h2{
+        text-align: center;
+    }
+    .cards section {
+        display: flex;
+        flex-direction: column;
+    }
 
     
     footer {

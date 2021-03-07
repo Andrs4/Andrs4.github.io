@@ -30,8 +30,22 @@
 /* ================Main================ */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: 1fr 1fr;
 }
+.cards section {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    margin-top: 10px;
+}
+#girl-street {
+    margin: 5px;
+    float: right;
+    box-shadow: rgba(70, 206, 255, 1);
+}
+
 /* ================footer================ */
     footer {
         margin-top: 30px;

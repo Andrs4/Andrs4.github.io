@@ -90,30 +90,49 @@ header h1{
 /* ===============Main=============== */
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(100, 149, 237, 0.5);
+  grid-column: 1;
+  max-width: 100%;
+  margin: .5rem auto;
+  display: block;
+  
+  text-align: center;
 }
 
 .cards section {
-  max-width: 600px;
-  margin: .5rem auto;
-	border:1px solid #bbb;
-  background-color: #eee;
-	display: flex;
-	flex-wrap: wrap;
-  padding: 10px;
-  /* text-align: center;
-  margin: 2px;
-  padding: 0 auto;
-  border: black solid; */
+  margin: 5px;
+  border:1px solid #bbb;
+  background-color: rgba(70, 206, 255, 0.361);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-items: center;
 }
 
-.cards section img {
-  /* max-width: 200px; */
-  border:1px solid #000080; 
-  width: 100%; 
-  height: auto;
+section:nth-child(even) img {
+	grid-column: 1;
+}
+
+section:nth-child(even) .content {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+
+.article {
+  display: block;  
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 40px;
+}
+#girl-street {
+  margin: 1rem auto;
+  width: 50%;
+  max-width: 250px;
+  box-shadow: 0 0 10px #222;
 }
 
 /* ================footer================ */
