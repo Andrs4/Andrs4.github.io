@@ -45,6 +45,9 @@
 th {
     background-color:  rgba(7, 89, 143, 0.823);
 }
+th, td {
+    padding:5px 30px;
+}
 #forecast {
   display: block;
   width: 60%;

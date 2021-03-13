@@ -49,11 +49,11 @@
             </picture>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p><strong>Currently: </strong>Sunny</p>
-                <p><strong>High: </strong>70° F</p>
-                <p><strong>Wind Chill: </strong>°F</p>
-                <p><strong>Humidity: </strong>69%</p>
-                <p id="speed"><strong>Wind Speed: </strong>5mph</p>
+                <p><strong>Currently: </strong><span id="current">Sunny</span></p>
+                <p><strong>High: </strong><span id="high">70</span>° F</p>
+                <p><strong>Wind Chill: </strong><span id="wind-chill"></span>° F</p>
+                <p><strong>Humidity: </strong><span id="humidity">69</span>%</p>
+                <p><strong>Wind Speed: </strong><span id="speed">5</span>mph</p>
             </section>
         </div>
         <div class="full-forecast">
@@ -62,24 +62,24 @@
           <!-- <img id="forecast" src="images/forecast.jpg" alt="Forecast image"> //This is an optional image to place instead the table-->
             <table>
               <tr>
-                <th>Mon</th>
-                <th>Twe</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
+                <th id="dayOfWeek1">Mon</th>
+                <th id="dayOfWeek2">Twe</th>
+                <th id="dayOfWeek3">Wed</th>
+                <th id="dayOfWeek4">Thu</th>
+                <th id="dayOfWeek5">Fri</th>
               </tr>
               <tr>
-                <td><img src="images/2275.png" alt="cloud and sun"></td>
-                <td><img src="images/2275.png" alt="cloud and sun"></td>
-                <td><img src="images/2275.png" alt="cloud and sun"></td>
-                <td><img src="images/2275.png" alt="cloud and sun"></td>
-                <td><img src="images/2275.png" alt="cloud and sun"></td>
+                <td><img id="forecastimg1" src="images/2275.png" alt="cloud and sun"></td>
+                <td><img id="forecastimg2" src="images/2275.png" alt="cloud and sun"></td>
+                <td><img id="forecastimg3" src="images/2275.png" alt="cloud and sun"></td>
+                <td><img id="forecastimg4" src="images/2275.png" alt="cloud and sun"></td>
+                <td><img id="forecastimg5" src="images/2275.png" alt="cloud and sun"></td>
               </tr>
-                <td class="temperature">61° F</td>
-                <td class="temperature">65° F</td>
-                <td class="temperature">67° F</td>
-                <td class="temperature">60° F</td>
-                <td class="temperature">69° F</td>
+                <td><span id="temperature1"></span>° F</td>
+                <td><span id="temperature2"></span>° F</td>
+                <td><span id="temperature3"></span>° F</td>
+                <td><span id="temperature4"></span>° F</td>
+                <td><span id="temperature5"></span>° F</td>
             </table>
           </div>
         </div>
@@ -112,6 +112,7 @@
       </div>
       <div>
         <script src="js/date.js"></script>
+        <script src="js/script.js"></script>
         ©<span id="currentYear"></span> &nbsp; | &nbsp;
         <span> Andres J Soruco</span> &nbsp; | &nbsp; <span>Bolivia</span> &nbsp; |
         &nbsp;

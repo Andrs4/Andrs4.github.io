@@ -36,75 +36,66 @@ function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
 
-/* ============= cards code for home page ========================*/
-/* Display the individual town data with the motto, year founded, population, and annual rainfall.*/
+/* ============= Summary API data getting ========================*/
 // set the JSON source URL
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const apiURL =   "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=fe9618ac2914a4fb6ae4a0b3b84bf461";
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-        //console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const towns = jsonObject['towns'];
-
-        const cards = document.querySelector(".cards")
-        // select output location
-        towns.forEach( town => {
-          let divText = document.createElement("div");
-          let card = document.createElement("section");
-          let h2 = document.createElement("h2");
-          let h5 = document.createElement("h5");
-          let p2 = document.createElement("p");
-          let p3 = document.createElement("p");
-          let p4 = document.createElement("p");
-          let townimg = document.createElement("img");
-          
-          if (town.name == "Preston" || town.name == "Fish Haven" || town.name == "Soda Springs") {
-            // template literals
-            h2.textContent = `${town.name}`;
-            h2.style.margin = '2px 0'
-            h5.textContent = `${town.motto}`;
-            h5.style.margin = '2px 0';
-            p2.textContent = `Year Founded: ${town.yearFounded}`;
-            p3.textContent = `Population: ${town.currentPopulation}`;
-            p4.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
-            pMargin = '1rem 0 0 0' // variable to hold margin of paragraphs
-            p2.style.margin = '2rem 0 0 0'
-            p3.style.margin = pMargin
-            p4.style.margin = pMargin
-            divText.setAttribute('class', "content");
-
-            townimg.setAttribute('src' , `images/${town.photo}`);
-            townimg.setAttribute("alt", `Prophet ${town.name} photo`);
-            townimg.setAttribute("loading", "lazy")
-            townimg.style.boxShadow = '0 0 30px #333';
-            townimg.style.width = '200px';
-            
-
-            divText.append(h2);
-            divText.append(h5);
-            divText.append(p2);
-            divText.append(p3);
-            divText.append(p4);
-            card.append(divText);
-            card.append(townimg);
-            cards.append(card);
-          }
-
-          function addingOdds(altVariable){
-            divText.setAttribute('class', "data");
-            if(altVariable%2==0){
-                townimg.setAttribute('class', "derecha");
-                divText.setAttribute('class', "data2");
-            }
-          }
-
-      });
-
-      
-
+fetch(apiURL) 
+    .then((response) => response.json())
+    .then((jsObject) => {
+      //console.log(jsObject);
+      /*================weather summary================*/
+    /*select all the summary elements needed*/
+    let current = document.querySelector("#current");
+    let high = document.querySelector("#high");
+    let windChill = document.querySelector("#wind-chill");
+    let humidity = document.querySelector("#humidity");
+    let speed = document.querySelector("#speed");
+    
+    /*setting new data, from openweathermap database*/
+    current.textContent= jsObject.weather[0].main;
+    high.textContent= jsObject.main.temp_max;
+    //Calculating windChill with real data.
+    let temp = 35.46;//jsObject.main.temp;
+    let wspeed = 4.9;//jsObject.wind.speed;
+    
+    let wChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wspeed, 0.16) + 0.4275 * temp * Math.pow(wspeed, 0.16);
+    windChill.innerHTML= Math.round(wChill);
+    
+    humidity.textContent= jsObject.main.humidity;
+    speed.textContent= jsObject.wind.speed;  
   });
 
+/*================5 day forecast================*/
+const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=fe9618ac2914a4fb6ae4a0b3b84bf461&units=imperial'
+fetch(apiForecastURL)
+  .then((response) => response.json())
+  .then((jsObject) => {    
+    //console.log(jsObject);
+    const dayAt = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    
+    const forFive = jsObject.list.filter((element) => //note the list property to filter.
+      element.dt_txt.includes("18:00:00")
+      );
+
+      
+    let day = 0;
+    for(let i=0; i < forFive.length; i++){
+      let d = new Date(forFive[i].dt_txt);
+
+      //for 5 days of week.
+      document.querySelector("#dayOfWeek" + (day + 1)).textContent = dayAt[d.getDay()];
+      
+      //table images output with it's properties.
+      const forecastimgsrc = `https://openweathermap.org/img/w/${forFive[day].weather[0].icon}.png`;
+      const desc = forFive[day].weather[0].icon;
+      document.getElementById("forecastimg" + (day + 1)).setAttribute('src', forecastimgsrc);
+      document.getElementById("forecastimg" + (day + 1)).setAttribute('alt', desc);      
+      
+      //table temperature rows output
+      document.querySelector("#temperature" + (day +1)).textContent = Math.round(forFive[day].main.temp);
+      day++
+    }
+    
+  });
 

@@ -3,7 +3,7 @@ const weatherAPId = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(weatherAPId) 
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);        
+        //console.log(jsObject);        
         const temperature = document.querySelector('#current-temp');
         temperature.textContent = jsObject.list[0].main.temp;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';  // note the concatenation
