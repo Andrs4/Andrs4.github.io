@@ -57,13 +57,13 @@ header div {
 .heading h1{
     padding-left: 25px;
     margin: auto 0px 0px 0px;
-    text-shadow: 0 0 10px rgba(135, 206, 235, 0.5) ;
   }
 
 .motto{
   padding-left: 25px;
   margin: 0px 0px auto 0px;
   text-shadow: 0 0 10px rgba(135, 206, 235, 0.5) ;
+  text-align: center;
 }
 
 /* ===============Main=============== */
