@@ -21,6 +21,7 @@ window.addEventListener('load', (event)=>{
     year.textContent = new Date().getFullYear();
 })
 
+/*======================== It Displays a banner on fridays =================*/
 window.onload = function toggleAnnouncement() {
     let day = new Date();
     let actual = day.getDay();

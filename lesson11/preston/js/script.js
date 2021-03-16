@@ -59,11 +59,17 @@ fetch(apiURL)
     let temp = 35.46;//jsObject.main.temp;
     let wspeed = 4.9;//jsObject.wind.speed;
     
-    let wChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wspeed, 0.16) + 0.4275 * temp * Math.pow(wspeed, 0.16);
-    windChill.innerHTML= Math.round(wChill);
-    
-    humidity.textContent= jsObject.main.humidity;
-    speed.textContent= jsObject.wind.speed;  
+    if (temp <= 50 && wspeed >= 3){
+      let wChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wspeed, 0.16) + 0.4275 * temp * Math.pow(wspeed, 0.16);
+      windChill.innerHTML= Math.round(wChill);
+      
+      humidity.textContent= jsObject.main.humidity;
+      speed.textContent= jsObject.wind.speed;
+    }
+    else {
+      wChill = "N/A";
+      windChill.innerHTML = wChill;
+    }  
   });
 
 /*================5 day forecast================*/

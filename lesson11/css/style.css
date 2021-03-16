@@ -25,13 +25,13 @@ footer {
   background-color: #50514f;
   color: white;
 }
-.banner {
+aside.banner {
   background-color: skyblue;
   padding: 2em;
   text-align: center;
   color: yellow;
 }
-.hide {
+aside#pancakes.banner.hide {
   display: none;
 }
 /* =============== Header =============== */
