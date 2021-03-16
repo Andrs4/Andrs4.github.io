@@ -25,12 +25,6 @@ footer {
   background-color: #50514f;
   color: white;
 }
-header div {
-    display: flex;
-    justify-items: center;
-    align-content: center;
-    max-width:100%;
-}
 .banner {
   background-color: skyblue;
   padding: 2em;
@@ -41,8 +35,16 @@ header div {
   display: none;
 }
 
+/* =============== Header =============== */
+header div {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  max-width:100%;
+}
 .logo {
   width: 15em;
+  margin: auto;
 }
 .heading {
     display: flex;
@@ -52,14 +54,16 @@ header div {
     padding: 5px 0;
 
 }
-header h1{
+.heading h1{
     padding-left: 25px;
-    margin-top: 64px;
-    margin-bottom: 0;
-}
+    margin: auto 0px 0px 0px;
+    text-shadow: 0 0 10px rgba(135, 206, 235, 0.5) ;
+  }
 
 .motto{
   padding-left: 25px;
+  margin: 0px 0px auto 0px;
+  text-shadow: 0 0 10px rgba(135, 206, 235, 0.5) ;
 }
 
 /* =============== Navigation =============== */

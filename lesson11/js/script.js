@@ -78,7 +78,7 @@ fetch(requestURL)
 
             townimg.setAttribute('src' , `images/${town.photo}`);
             townimg.setAttribute("alt", `Prophet ${town.name} photo`);
-            townimg.setAttribute("loading", "lazy")
+            townimg.setAttribute("loading", "lazy");
             townimg.style.boxShadow = '0 0 30px #333';
             townimg.style.width = '200px';
             

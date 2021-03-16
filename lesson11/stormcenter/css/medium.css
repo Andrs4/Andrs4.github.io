@@ -6,6 +6,16 @@
         max-width: 900px;
         margin: 1rem auto;
       }
+    header img{
+        float: right;
+        border-radius: 0 10px 0 0;
+    }
+    .logo {
+        margin: 0px;
+    }
+    
+
+    /* =================Navigation=============== */
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -22,11 +32,6 @@
         padding: 4px;
     }
     
-    header img{
-        box-shadow: 0 0 30px #444;
-        float: right;
-        border-radius: 0 10px 0 0;
-    }
 /* ================Main================ */
 form input.submitBtn {
     border: none;
