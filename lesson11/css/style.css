@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani&display=swap');
+
+body {
+    font-family: "Merriweather", serif;
+    width: 100%;
+}
+
+main, footer{
+  display: block;
+  max-width: 900px;
+  margin: 1rem 5px;
+}
+
+img {
+  width: 100%;
+}
+p{
+  font-family: 'Rajdhani', sans-serif;
+}
+h1, h2, h3, h4{
+  text-align: center;
+}
+header,
+footer {
+  background-color: #50514f;
+  color: white;
+}
+header div {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    max-width:100%;
+}
+.banner {
+  background-color: skyblue;
+  padding: 2em;
+  text-align: center;
+  color: yellow;
+}
+.hide {
+  display: none;
+}
+
+.logo {
+  width: 15em;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    padding: 5px 0;
+
+}
+header h1{
+    padding-left: 25px;
+    margin-top: 64px;
+    margin-bottom: 0;
+}
+
+.motto{
+  padding-left: 25px;
+}
+
+/* =============== Navigation =============== */
+.navigation li:first-child{
+  display: block;
+}
+.navigation li{
+  display:none;
+}
+.responsive li {
+  display:block;
+  padding: 4px;
+}
+
+.navigation li a{
+  display: block;
+  text-decoration-line: none;
+  color:white;
+}
+.navigation li a:hover {
+  background-color: skyblue;
+  color: yellow;
+}
+.active {
+  background-color: rgba(105, 206, 235, 0.3);
+}
+
+/* ===============Main=============== */
+
+.cards {
+  grid-column: 1;
+  max-width: 100%;
+  margin: .5rem auto;
+  display: block;
+  
+  text-align: center;
+}
+
+.cards section {
+  margin: 5px;
+  border:1px solid #bbb;
+  background-color: rgba(70, 206, 255, 0.361);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+section:nth-child(even) img {
+	grid-column: 1;
+}
+
+section:nth-child(even) .content {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+
+.article {
+  display: block;  
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 40px;
+}
+#girl-street {
+  margin: 1rem auto;
+  width: 50%;
+  max-width: 250px;
+  box-shadow: 0 0 10px #222;
+}
+
+/* ================footer================ */
+.contact-info img {
+  display: none;
+}
+.contact-info section img {
+  display: inline;
+  width: 1.5rem;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+}
+footer div:nth-child(2) {
+  padding-top: 10px;
+}
+/* ======== Nav ======= */
+.navigation {
+  display: block;
+  text-align: center;
+  background-color: black;
+  padding: 2px;
+  margin: 0;
+}
+
+
+
+/* === Gallery page */
+
+.set-of-images {
+  display: grid;
+  grid-template-columns: 1fr; 
+}
+
+.img_gallery {
+  margin-bottom: 10px;
+}
+.shadow {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px 0px 0px 3px;
+  max-width: 400px;
+  font-size: 0.8rem;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+@media (min-width: 60em) {
+
+    header, main{
+      font-size: 1.7rem;
+    }
+    nav {
+        font-size: 1.7rem;
+    }
+    h1, h2, h3, h4 p{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .navigation li a{
+        padding: 8px;
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cards h2{
+        text-align: center;
+    }
+    .cards section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    footer {
+        margin-top: initial;
+        font-size: 1.5rem;
+    }
+
+    
+}
