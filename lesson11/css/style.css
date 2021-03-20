@@ -42,8 +42,9 @@ header div {
   max-width:100%;
 }
 .logo {
-  width: 15em;
+  width: 150px;
   margin: auto;
+  padding: 20px 0;
 }
 .heading {
     display: flex;
@@ -144,8 +145,8 @@ section:nth-child(even) .content {
 }
 .contact-info section img {
   display: inline;
-  width: 1.5rem;
-  padding: 5px;
+  width: 2.5rem;
+  padding: 1px;
 }
 
 footer {
