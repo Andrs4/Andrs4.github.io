@@ -43,8 +43,9 @@ header div {
   max-width:100%;
 }
 .logo {
-  width: 15em;
+  width: 150px;
   margin: auto;
+  padding: 20px 0;
 }
 .heading {
     display: flex;

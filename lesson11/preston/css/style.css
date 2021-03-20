@@ -43,8 +43,9 @@ header div {
   max-width:100%;
 }
 .logo {
-  width: 15em;
+  width: 150px;
   margin: auto;
+  padding: 20px 0;
 }
 .heading {
     display: flex;
@@ -57,7 +58,6 @@ header div {
 .heading h1{
     padding-left: 25px;
     margin: auto 0px 0px 0px;
-
   }
 
 .motto{
@@ -113,6 +113,15 @@ header div {
   text-align: center;
 }
 
+.upcoming-events {
+  margin-top: 70px;
+  text-align: left;
+  background: radial-gradient(white, skyblue);
+  font-size: 70%;
+  border: 1px solid white;
+  padding: .9rem;
+}
+
 .full-forecast {
   display: none;
 }
@@ -123,7 +132,6 @@ header div {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 25px;
-  margin-top: 70px;
 }
 #girl-street {
   margin: 1rem auto;

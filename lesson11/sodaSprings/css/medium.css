@@ -35,6 +35,9 @@
     }
     
 /* ================Main================ */
+.upcoming-events {
+    margin-top: 0px;    
+}
 
 .full-forecast {
     display: block;

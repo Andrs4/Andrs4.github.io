@@ -38,7 +38,7 @@ function adjustRating(rating) {
 
 /* ============= Summary API data getting ========================*/
 // set the JSON source URL
-const apiURL =   "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=fe9618ac2914a4fb6ae4a0b3b84bf461";
+const apiURL =   "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=fe9618ac2914a4fb6ae4a0b3b84bf461";
 
 fetch(apiURL) 
     .then((response) => response.json())
@@ -73,7 +73,7 @@ fetch(apiURL)
   });
 
 /*================5 day forecast================*/
-const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=fe9618ac2914a4fb6ae4a0b3b84bf461&units=imperial'
+const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=fe9618ac2914a4fb6ae4a0b3b84bf461&units=imperial'
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {    
@@ -105,3 +105,34 @@ fetch(apiForecastURL)
     
   });
 
+/*================= Upcoming Events ================*/
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.log(jsonObject);
+    const towns = jsonObject['towns'];
+
+    const upcoming = document.querySelector(".upcoming-events");
+    towns.forEach( town => {
+      //console.log(town.name)
+      let p1 = document.createElement("p");
+      let p2 = document.createElement("p");
+      let p3 = document.createElement("p");
+      let upcomdiv = document.createElement("div")
+
+      if (town.name == "Fish Haven") {
+        p1.textContent = `${town.events[0]}`;
+        p2.textContent = `${town.events[1]}`;
+        p3.textContent = `${town.events[2]}`;
+
+        upcomdiv.append(p1);
+        upcomdiv.append(p2);
+        upcomdiv.append(p3);
+
+        upcoming.append(upcomdiv);
+      }
+    });
+  });
