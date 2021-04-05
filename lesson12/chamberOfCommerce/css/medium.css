@@ -1,0 +1,14 @@
+@media only screen and (min-width: 32.5em) {
+
+
+    /* =============== Header =============== */
+    .medium {
+        display: block;
+    }
+    .small {
+        display: none;
+    }
+
+        /* =============== Navigation =============== */
+
+}
