@@ -2,6 +2,13 @@
 
 
     /* =============== Header =============== */
+    #banner_img{
+        /* position: absolute; */
+    }
+    
+    #logo {
+        width: 120px;
+    }
     .medium {
         display: block;
     }
@@ -9,6 +16,48 @@
         display: none;
     }
 
-        /* =============== Navigation =============== */
+    /* =============== Navigation =============== */
 
+    nav {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        text-align: end;
+        margin-top: 21px;
+    }
+    a.hamburguer{
+        border: 1px transparent;
+    }
+    .navigation {
+        padding-right: 10px;
+        margin-top: 0;
+    }
+      .responsive li {
+        background-color: transparent;
+        color: white;
+      }
+      .responsive li a.hamburguer{
+        text-align: end;
+      }
+      .navigation li a{
+        color:white;
+      }
+      .navigation li a:hover {
+        background-color: white;
+        color: red;
+      }
+    
+
+    /* =============== Footer =============== */
+
+    .map {
+        grid-column: 1 / 4;
+        margin: 5px 20px ;
+    }
+    .contact {
+        grid-column: 4 / 7;
+        grid-row: 1 / 2;
+    }
+    .social {
+        grid-row: 2 / 3;
+    }
 }

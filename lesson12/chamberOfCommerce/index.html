@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="css/large.css"> 
 </head>
 <body>
-    <img id="banner_img" src="images/Tarija_farm_view.jpg" alt="Tarija farm view">
+    <div class="hero-header">
+        <img id="banner_img" src="images/Tarija_farm_view.jpg" alt="Tarija farm view">
+    </div>
     <header class="top" onmouseover="addingBackground()">
-        <img id="logo" src="images/tarija.png" alt="Commerce in Tarija Logo">
+        <img id="logo" src="images/tarija_logo_white.png" alt="Commerce in Tarija Logo">
         <div class="brand">
             <h1 class="small">C. I. T.</h1>
             <h1 class="medium">Commerce In Tarija</h1>
@@ -24,7 +26,7 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#" onclick="toggleMenu()" class="hamburguer">&#9776;</a></li>
                 <li><a href="../chamberOfCommerce/index.html">Home</a></li>
                 <li><a href="../chamberOfCommerce/city/">Tarija</a></li>
                 <li><a href="../chamberOfCommerce/join_us/">Join Us</a></li>
@@ -33,15 +35,30 @@
             </ul>
         </nav>
     </header>
-    <body>
+    <main>
         <!-- upcoming events -->
         <div></div>
-
+        <aside onload="toggleEvents()" id="elections" class="anouncement">
+            <h3>Comming mayoral and gobernor elections on April 11</h3>
+            <p>from 8:00am to 18:pm no cars drived are allowed.</p>
+        </aside> 
         <!-- description of the chamber and it's goal -->
         <h2>Title header</h2>
         <p>Some text over here</p>
         <!-- Here goes the three local companies -->
-        <div class="join">
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <!-- Call to action -->
+        <div class="action">
+            <img src="images/tarija_copa_join_us.jpg" alt="Mirador Copa de Vino Tarija">
+            <div class="join">
+                <h4> For a membership: </h4>
+                <a href="../chamberOfCommerce/join_us/"><button>Join Us</button></a>
+            </div>
         </div>
 
         <!-- Weather part -->
@@ -49,20 +66,33 @@
         <div>
 
         </div>
-    </body>
+    </main>
     <footer>
-        <!-- Contact information -->
-        <div>
-
-        </div>
-        <!-- Attributions page -->
-        <p><a href="">Attributions</a></p>
         <script src="js/script.js"></script>
-        <p>©Andres Soruco Mamani</p> &nbsp; | &nbsp; 
-        <p>Last Updated: <span id="currentDate"></span></p> &nbsp; | &nbsp;
-        <img src="images/rsz_facebook_logo.png" alt="facebook logo">
-        <img src="images/rsz_instagram_logo.png" alt="insta logo">
-        <img src="images/rsz_whatsapp_logo.png" alt="whatsapp logo"> 
+        <!-- Contact information -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20710.97535126109!2d-64.72142424403098!3d-21.538500161060664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1617731202284!5m2!1ses-419!2sbo" 
+            style="border:0;" allowfullscreen="" loading="lazy" id="tarija-map"></iframe>
+        </div>
+        <div class="contact">
+            <h4>Contact information</h4>
+                <ul>
+                    <li>Chamber of Commerce</li>
+                    <li>Tarija Calle España entre Ingavi y Bolivar</li>
+                </ul>
+            <!-- Attributions page -->
+            <h4><a href="">Attributions</a></h4>
+        </div>
+        
+        <!-- Social section -->
+        <div class="social">
+            <img src="images/rsz_facebook_logo.png" alt="facebook logo">
+            <img src="images/rsz_instagram_logo.png" alt="insta logo">
+            <img src="images/rsz_whatsapp_logo.png" alt="whatsapp logo">
+        </div> 
     </footer>
+    <div class="copyrigth">
+        <p>©Andres Soruco Mamani  &nbsp; | &nbsp; Last Updated: <span id="currentDate"></span></p> 
+    </div>
 </body>
 </html>

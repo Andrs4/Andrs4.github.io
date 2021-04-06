@@ -3,20 +3,19 @@ body {
 }
 
 /* =============== Header =============== */
-.top{
-    background-color: rgba(255, 0, 0, 0.2);
-}
-#banner_img{
-    position: absolute;
+
+#banner_img {
     z-index: 1;
     max-width: 100%;
 }
 .top {
-    position: relative;
-    z-index: 3;
+    position: sticky;
+    top : 0;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     width: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
 }
 .has-background {
     background-color: red;
@@ -43,13 +42,23 @@ body {
     margin: 10px;
 }
     /* =============== Navigation =============== */
+
 nav {
-    grid-column: 3 / 4;
-    text-align: end;
-    margin: auto;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+
+}
+a.hamburguer{
+    border: 1px solid red;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
 }
 .navigation {
     padding-left: 0;
+    margin: 0;
+
 }
 .navigation li:first-child{
     display: block;
@@ -60,25 +69,100 @@ nav {
   .responsive li {
     display:block;
     padding: 4px;
+    background-color: white;
+    color: red;
   }
-  
+  .responsive li a.hamburguer{
+    background-color: black;
+    color: white;
+  }
   .navigation li a{
     display: block;
     text-decoration-line: none;
-    color:white;
+    color:red;
   }
   .navigation li a:hover {
-    background-color: red;
-    color: yellow;
+    background-color: black;
+    color: white;
   }
   .active {
-    background-color: rgba(105, 206, 235, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-
-
+/* =============== Main =============== */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 4;
+  }
+  .anouncement{
+    background-color: red;
+    color: yellow;
+    text-align: center;
+  }
+  aside#elections.anouncement.hide {
+    display: none;
+  }
+  .action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .action img {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    max-width: 100%;
+  }
+  .join {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: block;
+    margin: auto;
+    border: 1px solid #ffb910 ;
+    border-radius: 2px;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    color: white
+  }
+  .join button{
+    border-radius: 20px;
+    margin: 0 50px ;
+    padding: 20px 50px;
+    background-color: #ffb910;
+    border-color: white;
+    color: white;
+    outline-color: white;
+  }
 /* =============== Footer =============== */
 footer{
+    z-index: 5;
     background-color: red;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr auto;
+    text-align: center;
+}
+
+footer li {
+    list-style: none;
+}
+.map {
+    grid-column: 1 / -1;
+    margin: auto 20px ;
+}
+.contact {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+.copyrigth {
+    text-align: center;
+}
+.social {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+#tarija-map {
+    max-width: 75%;
 }
