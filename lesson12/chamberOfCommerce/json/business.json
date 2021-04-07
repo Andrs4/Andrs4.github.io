@@ -9,7 +9,7 @@
             "phone"     : "66 - 48626",
             "e-mail"    : "oportunidades@cba.org.bo",
             "web-page"  : "https://www.cba.org.bo/site/",
-            "image"     : "images/cba_tarija.png"
+            "image"     : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/cba_tarija.png"
         },
             
         {
@@ -21,7 +21,7 @@
             "phone"    : "46638736 - 72965513",
             "e-mail"   : "",
             "web-page" : "https://piltarija.com/",
-            "image"    : "images/logopil2.png"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/logopil2.png"
         },
          
         {
@@ -33,7 +33,7 @@
             "phone"    : "71864522",
             "e-mail"   : "municipio@tarija.bo",
             "web-page" : "https://inicio.tarija.bo/",
-            "image"    : "images/gobierno_de_tarija.jpg"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/gobierno_de_tarija.jpg"
         },
 
         {
@@ -45,7 +45,7 @@
             "phone"    : "66 40450 - 6630496",
             "e-mail"   : "",
             "web-page" : "",
-            "image"    : "images/palamas.jpg"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/palamas.jpg"
         },
 
         {
@@ -57,7 +57,7 @@
             "phone"    : "4 6668399",
             "e-mail"   : "",
             "web-page" : "",
-            "image"    : "images/gamat.jpg" 
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/gamat.jpg" 
         },
 
         {
@@ -69,7 +69,7 @@
             "phone"    : "75133800",
             "e-mail"   : "info@hotellosceibos.com",
             "web-page" : "http://www.hotellosceibos.com/newsite/",
-            "image"    : "images/los_ceibos.jpg"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/los_ceibos.jpg"
         },
 
         {
@@ -81,7 +81,7 @@
             "phone"    : "4 6650888",
             "e-mail"   : "",
             "web-page" : "https://diarionuevosur.com/contacto/",
-            "image"    : "images/logo_nuevo_sur.png"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/logo_nuevo_sur.png"
         },
 
         {
@@ -93,7 +93,7 @@
             "phone"    : "6634794",
             "e-mail"   : "",
             "web-page" : "https://www.faboce.com.bo/",
-            "image"    : "images/faboce.jpg"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/faboce.jpg"
         },
 
         {
@@ -105,7 +105,7 @@
             "phone"    : "4 6631961",
             "e-mail"   : "",
             "web-page" : "",
-            "image"    : "images/juarez.jpg"
+            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/images/juarez.jpg"
         }
     ]
 }
