@@ -1,4 +1,4 @@
-const requestURL = 'json/business.json';
+const requestURL = '/json/business.json';
 
 fetch(requestURL)
   .then(function (response) {
