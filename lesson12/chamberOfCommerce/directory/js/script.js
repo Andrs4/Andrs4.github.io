@@ -1,17 +1,16 @@
-// set the JSON source URL
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = '../lesson12/chamberOfCommerce/json/business.json';
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-        //console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const prophets = jsonObject['prophets'];
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const business = jsonObject['business'];
 
         const cards = document.querySelector(".cards")
         // select output location
-        prophets.forEach(prophet => {
+        business.forEach(eachB => {
             let card = document.createElement("section");
             let h2 = document.createElement("h2");
             let p1 = document.createElement("p");
@@ -19,7 +18,7 @@ fetch(requestURL)
             let prophetimg = document.createElement("img");
             
             // template literals
-            h2.textContent = `${prophet.name} ${prophet.lastname}`;
+            h2.textContent = `${eachB.name} ${eachB.fullname}`;
             p1.textContent = `Date of Birth: ${prophet.birthdate}`;
             p2.textContent = `Place of Birth: ${prophet.birthplace}`;
             prophetimg.setAttribute('src' , prophet.imageurl);
@@ -36,5 +35,3 @@ fetch(requestURL)
       });
 
   });
-
-
