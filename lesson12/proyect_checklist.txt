@@ -1,0 +1,16 @@
+engaging images of the municipality,
+local company advertisement section highlighting three local companies,
+a description of the purpose of the chamber and its goals,
+the current weather information, obtained from the One Call API at openweathermap.org
+
+
+
+📄 The City (use the actual city name) page provides historical and current demographic information about the city. Use current imagery and include current city events.  Promote your city through any other creative method of content you determine would be effective.
+
+📄 The Join page that contains information about the benefit of joining the chamber and a membership application form. The form should be well designed and use appropriate form elements and lead to a confirmation page that has the same basic design as the other pages. Collect the following information:
+
+📄 The Directory page provides a list of local business organizations that are actual, local businesses in your area. There should be at least 7 businesses listed.
+ Include contact information, logos (if available), and actual web links (if available). The content build must be driven from a JSON data source of your own making. You can store this .json file in another 📁folder on your site. Display the directory as a grid of business 'cards'
+
+📄 The Contact page will contain essential contact information for the chamber including (not necessarily in this order)
+

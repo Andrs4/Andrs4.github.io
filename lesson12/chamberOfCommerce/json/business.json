@@ -1,0 +1,113 @@
+{ "business" :
+    [
+	    {
+            "name"      : "CBA" ,
+		    "fullname"  : "Centro Boliviano Americano",
+            "city"      : "Tarija",
+            "business"  : "Teaching Institution",
+            "address"   : "Calle La Madrid N°732 entre O'connor y Ejercito, Tarija Bolivia",
+            "phone"     : "66 - 48626",
+            "e-mail"    : "oportunidades@cba.org.bo",
+            "web-page"  : "https://www.cba.org.bo/site/",
+            "image"     : "images/cba_tarija.png"
+        },
+            
+        {
+            "name"     : "PIL",
+            "fullname" : "PIL Tarija",
+            "city"     : "Tarija",
+            "business" : "milk base drinks",
+            "address"  : "Carretera a Bermejo, Km2, Zona Aeropuerto",
+            "phone"    : "46638736 - 72965513",
+            "e-mail"   : "",
+            "web-page" : "https://piltarija.com/",
+            "image"    : "images/logopil2.png"
+        },
+         
+        {
+            "name"     : "Gobierno",
+            "fullname" : "Gobierno Autónomo de Tarija",
+            "city"     : "Tarija",
+            "business" : "City administration",
+            "address"  : "Calle Gral Trigo 655",
+            "phone"    : "71864522",
+            "e-mail"   : "municipio@tarija.bo",
+            "web-page" : "https://inicio.tarija.bo/",
+            "image"    : "images/gobierno_de_tarija.jpg"
+        },
+
+        {
+            "name"     : "Palamas",
+            "fullname" : "Palacio de las Masas",
+            "city"     : "Tarija",
+            "business" : "Bakery",
+            "address"  : "Calle España 343",
+            "phone"    : "66 40450 - 6630496",
+            "e-mail"   : "",
+            "web-page" : "",
+            "image"    : "images/palamas.jpg",
+
+        },
+
+        {
+            "name"     : "GAMAT",
+            "fullname" : "Gamat SRL",
+            "city"     : "Tarija",
+            "business" : "Home articles",
+            "address"  : "Av Circunvalacion 1435",
+            "phone"    : "4 6668399",
+            "e-mail"   : "",
+            "web-page" : "",
+            "image"    : "images/gamat.jpg" 
+        },
+
+        {
+            "name"     : "Los Ceibos",
+            "fullname" : "Hotel Los Ceibos",
+            "city"     : "Tarija",
+            "business" : "Hotel",
+            "address"  : "Av. Panamericana 612, Ruta Nacional 1",
+            "phone"    : "75133800",
+            "e-mail"   : "info@hotellosceibos.com",
+            "web-page" : "http://www.hotellosceibos.com/newsite/",
+            "image"    : "images/los_ceibos.jpg"
+        },
+
+        {
+            "name"     : "Nuevo Sur",
+            "fullname" : "Diario Nuevo Sur",
+            "city"     : "Tarija",
+            "business" : "Newspapper",
+            "address"  : "Calle Virginio Lema # 785 esquina Ramón Rojas",
+            "phone"    : "4 6650888",
+            "e-mail"   : "",
+            "web-page" : "https://diarionuevosur.com/contacto/",
+            "image"    : "images/logo_nuevo_sur.png"
+        },
+
+        {
+            "name"     : "Faboce",
+            "fullname" : "Faboce",
+            "city"     : "Tarija",
+            "business" : "Consctruction",
+            "address"  : "Calle Ingavi 410",
+            "phone"    : "6634794",
+            "e-mail"   : "",
+            "web-page" : "https://www.faboce.com.bo/",
+            "image"    : "images/faboce.jpg"
+        }
+
+        {
+            "name"     : "Juarez",
+            "fullname" : "Trans Tours Juarez C",
+            "city"     : "Tarija",
+            "business" : "Transport",
+            "address"  : "Calle Angel Calavi # 523",
+            "phone"    : "4 6631961",
+            "e-mail"   : "",
+            "web-page" : "",
+            "image"    : "images/juarez.jpg",
+        }
+    ]
+}
+    
