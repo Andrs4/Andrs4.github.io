@@ -137,6 +137,64 @@ a.hamburguer{
     color: white;
     outline-color: white;
   }
+
+
+  /* ||=============== Directory ===============|| */
+  .mode-buttons {
+    margin: 10px auto;
+    text-align: center;
+    background-color: white;
+}
+  .mode-buttons input {
+    font-size: 2rem;
+    background-color: red;
+    color : white;
+    border: 1px solid red;
+    border-radius: 5px;        
+  }
+  .cards {
+    display: grid;
+    margin: 0 auto;
+  }
+  .cards section {
+      text-align: center;
+      margin: 2px;
+      padding: 0 auto;
+      border: 1px black solid;
+  }
+  .cards section img {
+    max-width: 200px;
+  }
+  .gridStyle {
+    display: grid;
+  }
+  .cards.gridStyle.listStyle {
+    display: inline;
+    background-color: white;
+  }
+  .cards.gridStyle.listStyle section{
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards.gridStyle.listStyle section h1{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+  .cards.gridStyle.listStyle section img {
+    margin: 15px;
+    grid-column: 1 / 2;
+  }
+  .cards.gridStyle.listStyle section div {
+    margin: 15px;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
 /* =============== Footer =============== */
 footer{
     z-index: 5;

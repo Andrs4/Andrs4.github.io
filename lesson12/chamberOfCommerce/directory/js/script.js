@@ -12,26 +12,44 @@ fetch(requestURL)
         // select output location
         business.forEach(eachB => {
             let card = document.createElement("section");
+            let h1 = document.createElement("h1");
             let h2 = document.createElement("h2");
             let p1 = document.createElement("p");
-            let p2 = document.createElement("p");
+            let h3 = document.createElement("h3");
+            let div = document.createElement("div");
             let businessimg = document.createElement("img");
             
+            //card.setAttribute('class', "gridStyle");
             // template literals
-            h2.textContent = `${eachB.name} ${eachB.fullname}`;
-            p1.textContent = `Date of Birth: ${eachB.city}`;
-            p2.textContent = `Place of Birth: ${eachB.business}`;
+            h1.textContent = `${eachB.name}`;
+            h2.textContent = `${eachB.fullname}`;
+            p1.textContent = `${eachB.city}, ${eachB.address}`;
+            h3.textContent = `${eachB.business}`;
             businessimg.setAttribute('src' , eachB.image);
             businessimg.setAttribute("alt", `${eachB.image} image`);
             businessimg.setAttribute("loading", "lazy")
             businessimg.style.boxShadow = '0 0 30px #333';
             businessimg.style.width = '200px';
             
-            card.append(h2);
-            card.append(p1);
-            card.append(p2);
+            card.append(h1);
             card.append(businessimg);
+            div.append(h2);
+            div.append(p1);
+            div.append(h3);
+            card.append(div)
             cards.append(card);
       });
 
   });
+
+let item = document.getElementsByClassName("gridStyle")
+function changeToList() {
+    for (i = 0; i < 10; i++){
+    item[i].classList.add("listStyle");
+    };
+}
+function changeToGrid() {
+    for (i= 0; i < 10; i++) {
+    item[i].classList.remove('listStyle');
+    };
+}

@@ -36,9 +36,13 @@
     
     <main>
         <div class="hero-header">
-            <img id="banner_img" src="../images/tarija_directory.jpg" alt="Tarija farm view">
+            <img id="banner_img" src="../images/tarija_directory_large.jpg" alt="Tarija branch view">
         </div>
-        <div class="cards"></div>
+        <div class="mode-buttons">
+            <input type="button" onclick="changeToList()" id="list" value="&#9636">
+            <input type="button" onclick="changeToGrid()" id="grid" value="&#9638">
+        </div>
+        <div class="cards gridStyle"></div>
     </main>    
     <footer>
         <script src="js/script.js"></script>

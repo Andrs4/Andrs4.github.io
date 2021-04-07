@@ -47,9 +47,36 @@
         background-color: white;
         color: red;
       }
-    
+    /* =============== Main =============== */
+
+
+
+
+        /* =============== Directory =============== */
+
+        .mode-buttons {
+            margin: 10px auto;
+            text-align: end;
+        }
+        .mode-buttons input {
+            font-size: 2rem;
+            background-color: white;
+            color : red;
+            border: 1px solid red;
+            border-radius: 5px;        
+        }
+        .cards.gridStyle {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        }
+        .listStyle {
+            display: inline;
+            background-color: white;
+        }
+        
 
     /* =============== Footer =============== */
+
 
     .map {
         grid-column: 1 / 4;
