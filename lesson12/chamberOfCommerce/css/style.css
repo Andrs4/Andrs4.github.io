@@ -3,18 +3,21 @@ body {
 }
 
 /* =============== Header =============== */
-
-#banner_img {
-    z-index: 1;
-    max-width: 100%;
+.hero-header {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
 }
+#banner_img {
+
+    max-width: 100%;
+    margin: 0 auto;
+  }
 .top {
     position: sticky;
     top : 0;
-    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    width: 100%;
     background-color: rgba(255, 0, 0, 0.3);
 }
 .has-background {
@@ -45,9 +48,8 @@ body {
 
 nav {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     text-align: center;
-
 }
 a.hamburguer{
     border: 1px solid red;
@@ -62,6 +64,7 @@ a.hamburguer{
 }
 .navigation li:first-child{
     display: block;
+    border:  1px solid white;
   }
   .navigation li{
     display:none;
@@ -162,6 +165,12 @@ footer li {
 .social {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+
+}
+.social img{
+  display: inline;
+  width: 3rem;
+  padding: 1px;
 }
 #tarija-map {
     max-width: 75%;
