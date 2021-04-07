@@ -145,6 +145,9 @@ a.hamburguer{
     outline-color: white;
   }
 
+  #directoryLink {
+    text-align: end;
+  }
 
   /* ||=============== Directory ===============|| */
   .mode-buttons {
@@ -189,16 +192,17 @@ a.hamburguer{
     align-items: center;
   }
   .cards.gridStyle.listStyle section h1{
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
     grid-row: 1 / 2;
   }
   .cards.gridStyle.listStyle section img {
     margin: 15px;
     grid-column: 1 / 2;
+    grid-row: 1 / -1;
   }
   .cards.gridStyle.listStyle section div {
     margin: 15px;
-    grid-column: 2 / 4;
+    grid-column: 2 / -1;
     grid-row: 2 / 3;
   }
 

@@ -26,11 +26,6 @@ fetch(requestURL)
             // template literals
             h1.textContent = `${business[i].name}`;
             h2.textContent = `${business[i].fullname}`;
-            p1.textContent = `${business[i].city}, ${business[i].address}`;
-            p2.textContent = `${eachB.phone}`;
-            p3.textContent = `${eachB.email}`;
-            p4.textContent = `${eachB.webpage}`;
-            h3.textContent = `${business[i].business}`;
             businessimg.setAttribute('src' , business[i].image);
             businessimg.setAttribute("alt", `${business[i].image} image`);
             businessimg.setAttribute("loading", "lazy")
