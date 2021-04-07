@@ -1,4 +1,4 @@
-const requestURL = '/json/business.json';
+const requestURL = 'https://andrs4.github.io/lesson12/chamberOfCommerce/json/business.json';
 
 fetch(requestURL)
   .then(function (response) {
