@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Merienda+One&display=swap');
+
 body {
     width: 100%;
+    font-family: 'Marmelad', sans-serif;
+}
+
+h1{
+  font-family: 'Merienda One', cursive;
 }
 
 /* =============== Header =============== */

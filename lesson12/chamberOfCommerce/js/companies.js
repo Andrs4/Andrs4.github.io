@@ -10,8 +10,7 @@ fetch(requestURL)
 
         const cards = document.querySelector(".cards")
         // select output location
-        
-        business.forEach(eachB => {
+        for (i = 0; i < 3; i ++) {
             let card = document.createElement("section");
             let h1 = document.createElement("h1");
             let h2 = document.createElement("h2");
@@ -25,15 +24,15 @@ fetch(requestURL)
             
             //card.setAttribute('class', "gridStyle");
             // template literals
-            h1.textContent = `${eachB.name}`;
-            h2.textContent = `${eachB.fullname}`;
-            p1.textContent = `${eachB.city}, ${eachB.address}`;
+            h1.textContent = `${business[i].name}`;
+            h2.textContent = `${business[i].fullname}`;
+            p1.textContent = `${business[i].city}, ${business[i].address}`;
             p2.textContent = `${eachB.phone}`;
             p3.textContent = `${eachB.email}`;
             p4.textContent = `${eachB.webpage}`;
-            h3.textContent = `${eachB.business}`;
-            businessimg.setAttribute('src' , eachB.image);
-            businessimg.setAttribute("alt", `${eachB.image} image`);
+            h3.textContent = `${business[i].business}`;
+            businessimg.setAttribute('src' , business[i].image);
+            businessimg.setAttribute("alt", `${business[i].image} image`);
             businessimg.setAttribute("loading", "lazy")
             businessimg.style.boxShadow = '0 0 30px #333';
             businessimg.style.width = '200px';
@@ -48,18 +47,6 @@ fetch(requestURL)
             div.append(h3);
             card.append(div)
             cards.append(card);
-      });
-    
-  });
+      };
 
-let item = document.getElementsByClassName("gridStyle")
-function changeToList() {
-    for (i = 0; i < 10; i++){
-    item[i].classList.add("listStyle");
-    };
-}
-function changeToGrid() {
-    for (i= 0; i < 10; i++) {
-    item[i].classList.remove('listStyle');
-    };
-}
+  });

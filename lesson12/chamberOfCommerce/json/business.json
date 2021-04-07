@@ -7,8 +7,8 @@
             "business"  : "Teaching Institution",
             "address"   : "Calle La Madrid N°732 entre O'connor y Ejercito, Tarija Bolivia",
             "phone"     : "66 - 48626",
-            "e-mail"    : "oportunidades@cba.org.bo",
-            "web-page"  : "https://www.cba.org.bo/site/",
+            "email"    : "oportunidades@cba.org.bo",
+            "webpage"  : "https://www.cba.org.bo/site/",
             "image"     : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/cba_tarija.png"
         },
             
@@ -19,8 +19,8 @@
             "business" : "milk base drinks",
             "address"  : "Carretera a Bermejo, Km2, Zona Aeropuerto",
             "phone"    : "46638736 - 72965513",
-            "e-mail"   : "",
-            "web-page" : "https://piltarija.com/",
+            "email"   : "",
+            "webpage" : "https://piltarija.com/",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/logopil2.png"
         },
          
@@ -31,8 +31,8 @@
             "business" : "City administration",
             "address"  : "Calle Gral Trigo 655",
             "phone"    : "71864522",
-            "e-mail"   : "municipio@tarija.bo",
-            "web-page" : "https://inicio.tarija.bo/",
+            "email"   : "municipio@tarija.bo",
+            "webpage" : "https://inicio.tarija.bo/",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/gobierno_de_tarija.jpg"
         },
 
@@ -43,8 +43,8 @@
             "business" : "Bakery",
             "address"  : "Calle España 343",
             "phone"    : "66 40450 - 6630496",
-            "e-mail"   : "",
-            "web-page" : "",
+            "email"   : "",
+            "webpage" : "",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/palamas.jpg"
         },
 
@@ -55,8 +55,8 @@
             "business" : "Home articles",
             "address"  : "Av Circunvalacion 1435",
             "phone"    : "4 6668399",
-            "e-mail"   : "",
-            "web-page" : "",
+            "email"   : "",
+            "webpage" : "",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/gamat.jpg" 
         },
 
@@ -67,8 +67,8 @@
             "business" : "Hotel",
             "address"  : "Av. Panamericana 612, Ruta Nacional 1",
             "phone"    : "75133800",
-            "e-mail"   : "info@hotellosceibos.com",
-            "web-page" : "http://www.hotellosceibos.com/newsite/",
+            "email"   : "info@hotellosceibos.com",
+            "webpage" : "http://www.hotellosceibos.com/newsite/",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/los_ceibos.jpg"
         },
 
@@ -79,8 +79,8 @@
             "business" : "Newspapper",
             "address"  : "Calle Virginio Lema # 785 esquina Ramón Rojas",
             "phone"    : "4 6650888",
-            "e-mail"   : "",
-            "web-page" : "https://diarionuevosur.com/contacto/",
+            "email"   : "",
+            "webpage" : "https://diarionuevosur.com/contacto/",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/logo_nuevo_sur.png"
         },
 
@@ -91,8 +91,8 @@
             "business" : "Consctruction",
             "address"  : "Calle Ingavi 410",
             "phone"    : "6634794",
-            "e-mail"   : "",
-            "web-page" : "https://www.faboce.com.bo/",
+            "email"   : "",
+            "webpage" : "https://www.faboce.com.bo/",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/faboce.jpg"
         },
 
@@ -103,8 +103,8 @@
             "business" : "Transport",
             "address"  : "Calle Angel Calavi # 523",
             "phone"    : "4 6631961",
-            "e-mail"   : "",
-            "web-page" : "",
+            "email"   : "",
+            "webpage" : "",
             "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/juarez.jpg"
         }
     ]
