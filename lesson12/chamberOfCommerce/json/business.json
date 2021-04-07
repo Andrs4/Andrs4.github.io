@@ -45,8 +45,7 @@
             "phone"    : "66 40450 - 6630496",
             "e-mail"   : "",
             "web-page" : "",
-            "image"    : "images/palamas.jpg",
-
+            "image"    : "images/palamas.jpg"
         },
 
         {
@@ -106,7 +105,7 @@
             "phone"    : "4 6631961",
             "e-mail"   : "",
             "web-page" : "",
-            "image"    : "images/juarez.jpg",
+            "image"    : "images/juarez.jpg"
         }
     ]
 }
