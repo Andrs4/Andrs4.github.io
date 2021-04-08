@@ -45,8 +45,19 @@
             <p>from 8:00am to 18:pm no cars drived are allowed.</p>
         </aside> 
         <!-- description of the chamber and it's goal -->
-        <h2>Title header</h2>
-        <p>Some text over here</p>
+        <section class="description">
+            <img src="images/uva.jpg" alt="viñedos de Tarija">
+            <h2>More than a Chamber of Commerce</h2>
+            <p>As a beautiful place to live! Tarija has a lot of diversity, 
+                but it also has a strong self-culture, this site purpose 
+                is to let you know about Tarija, its people, its culture 
+                and how business can grow together right there.</p>
+            <p>Our goal is to help you first to know about our member 
+                business companies and associates, to invest with us and do some business, 
+                and second to help you stablish in this beautiful place where you can enjoy
+                so many thinks.</p>
+            <img src="images/casa-dorada.jpg" alt="La casa Dorada en Tarija">
+        </section>
         <!-- Here goes the three local companies -->
         <section>
             <div class="cards gridStyle listStyle"></div>
@@ -61,12 +72,39 @@
                 <a href="../chamberOfCommerce/join_us/join_page.html"><button>Join Us</button></a>
             </div>
         </div>
-
+        <br>
+        <br>
         <!-- Weather part -->
-        <img src="" alt="">
-        <div>
-
-        </div>
+        <div class="weatherPart">
+            <div class="weatherImg"><img src="images/mirador_img_weather.jpg" alt="Mirador de San Juan"></div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p class="currentTemp"><strong>Temp: </strong><span id="currentTemp"></span>° F</p>
+                <p class="lowInfo"><strong>Currently: </strong><span id="current"></span></p>
+                <p class="lowInfo"><strong>Humidity: </strong><span id="humidity"></span>%</p>
+            </div>
+            <div class="full-forecast">
+                <h3>3 Day Forecast</h3>
+                <div class="forecast">
+                <!-- <img id="forecast" src="images/forecast.jpg" alt="Forecast image"> //This is an optional image to place instead the table-->
+                  <table>
+                    <tr>
+                      <th id="dayOfWeek1">Mon</th>
+                      <th id="dayOfWeek2">Twe</th>
+                      <th id="dayOfWeek3">Wed</th>
+                    </tr>
+                    <tr>
+                      <td><img id="forecastimg1" src="images/2275.png" alt="cloud and sun"></td>
+                      <td><img id="forecastimg2" src="images/2275.png" alt="cloud and sun"></td>
+                      <td><img id="forecastimg3" src="images/2275.png" alt="cloud and sun"></td>
+                    </tr>
+                      <td><span id="temperature1"></span>° F</td>
+                      <td><span id="temperature2"></span>° F</td>
+                      <td><span id="temperature3"></span>° F</td>
+                  </table>
+                </div>
+              </div>
+            </div>
     </main>
     <footer>
         <script src="js/script.js"></script>
@@ -77,13 +115,13 @@
             style="border:0;" allowfullscreen="" loading="lazy" id="tarija-map"></iframe>
         </div>
         <div class="contact">
-            <h4>Contact information</h4>
+            <a href="contact_us/contact.html"><h4>Contact information</h4></a>
                 <ul>
                     <li>Chamber of Commerce</li>
                     <li>Tarija Calle España entre Ingavi y Bolivar</li>
                 </ul>
             <!-- Attributions page -->
-            <h4><a href="">Attributions</a></h4>
+            <!-- <h4><a href="">Attributions</a></h4> -->
         </div>
         
         <!-- Social section -->

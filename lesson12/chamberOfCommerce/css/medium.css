@@ -51,6 +51,29 @@
 
 
 
+        /*wheater */
+        .weatherPart {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        .weatherImg {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+          }
+        .weather {
+          margin: 100px 15px;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          border: 1px solid  #ffb910;
+          color: #ffb910;
+        }
+        .full-forecast {
+          grid-column: 1 / -1;
+          margin: 10px auto;
+          border: 1px solid  #ffb910;
+          color: #ffb910;
+        }
 
         /* =============== Directory =============== */
 
@@ -65,6 +88,7 @@
             border: 1px solid red;
             border-radius: 5px;        
         }
+
         .cards.gridStyle {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
@@ -83,7 +107,8 @@
         margin: 5px 20px ;
     }
     .contact {
-        grid-column: 4 / 7;
+        text-align: start;
+        grid-column: 5 / 7;
         grid-row: 1 / 2;
     }
     .social {
