@@ -1,5 +1,3 @@
-const d = new Date();
-const actualDate = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 
 window.addEventListener('load', (event)=>{
 
@@ -40,7 +38,7 @@ const apiURL =   "https://api.openweathermap.org/data/2.5/weather?id=3903320&uni
 fetch(apiURL) 
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log(jsObject);
+      //console.log(jsObject);
       /*================weather summary================*/
     /*select all the summary elements needed*/
     let currentTemp = document.querySelector("#currentTemp") 
@@ -52,7 +50,6 @@ fetch(apiURL)
     currentTemp.textContent = jsObject.main.temp;
     current.textContent= jsObject.weather[0].main;
     humidity.textContent= jsObject.main.humidity;
-    high.textContent= jsObject.main.temp_max;
 
   });
 
@@ -61,7 +58,7 @@ const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=3903
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {    
-    console.log(jsObject);
+    //console.log(jsObject);
     const dayAt = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     
     const forThree = jsObject.list.filter((element) => //note the list property to filter.
