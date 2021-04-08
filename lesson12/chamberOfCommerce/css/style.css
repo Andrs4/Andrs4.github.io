@@ -276,6 +276,75 @@ a.hamburguer{
     grid-row: 2 / 3;
   }
 
+  /*||==============Join Us===============||*/
+  fieldset {
+    background-color: rgba(105, 206, 235, 0.05);
+  }
+  
+  label {
+    font-size: 1rem ;
+  }
+  
+  form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445;
+    border-radius: 5px;
+    padding: .5rem 2%;
+    max-width: 900px;
+  }
+  form legend {
+    color: blue;
+    margin:  0 1rem;
+    padding: 0 .5rem;
+  }
+  
+  form label.onTop, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+  }
+  
+  form label.onTop input, form label.onTop select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: red;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+  }
+  form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  
+  form label.onTop input:required {
+    border-left: red solid 6px;
+  }
+  form label.onTop input:required:valid {
+    border-left: green solid 6px;
+  }
+  textarea {
+    max-width: 70%;
+    padding: .55rem;
+  }
+
 /* =============== Footer =============== */
 footer{
     z-index: 5;

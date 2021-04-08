@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="../css/large.css"> 
 </head>
 <body>
-    <header class="top" onmouseover="addingBackground()">
-        <img id="logo" src="../images/tarija_logo_white.png" alt="Commerce in Tarija Logo">
+    <header class="top">
+        <img id="logo" src="../images/tarija_logo_white.png" alt="Commerce in Tarija Logo" loading="lazy">
         <div class="brand">
             <h1 class="small">C. I. T.</h1>
             <h1 class="medium">Commerce In Tarija</h1>
@@ -27,7 +27,7 @@
                 <li><a href="#" onclick="toggleMenu()" class="hamburguer">&#9776;</a></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../city/city.html">Tarija</a></li>
-                <li><a href="../join_us/join_page.html">Join Us</a></li>
+                <li><a class="active" href="../join_us/join_page.html">Join Us</a></li>
                 <li><a href="../directory/directory.html">Directory</a></li>
                 <li><a href="../contact_us/contact.html">Contact Us</a></li>
             </ul>
@@ -36,31 +36,58 @@
     
     <main>
         <div class="hero-header">
-            <img id="banner_img" src="images/tarija_farm_view_hero.jpg" alt="Tarija farm view">
+            <img id="banner_img" src="../images/tarija_contact_us.jpg" alt="Tarija farm view">
         </div>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="onTop" for="firstName">First Name <input type="text" name="firstName" id="firstName" required></label>
+                <label class="onTop" for="lastName">Last Name <input type="text" name="lastName" id="lastName" required></label>
+                <label class="onTop" for="email">E-mail <input type="email" name="email" id="email" required></label>
+                <label class="onTop" for="phone">Cell Phone <input type="number" name="phone" id="phone"></label>
+                <label class="onTop" for="title">Title <input type="text" name="title" id="title"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="onTop" for="bname">Business Name <input type="text" name="bname" id="bname" required></label>
+                <label class="onTop" for="baddress">Business Address <input type="text" name="baddress" id="baddress"></label>
+                <label class="onTop" for="bwebsite">Business Website <input type="url" name="bwebsite" id="bwebsite"></label>
+                <label class="onTop" for="bdescription">Business Description <textarea name="bdescription" id="bdescription" rows="5" cols="50"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Options</legend>
+                <label class="sbs"><input type="radio" name="membership" id="nonProfit" value="nonProfit"> Non-profit ($100)</label>
+                <label class="sbs"><input type="radio" name="membership" id="bronze" value="bronze"> Bronze ($200)</label>
+                <label class="sbs"><input type="radio" name="membership" id="silver" value="silver"> Silver ($400)</label>
+                <label class="sbs"><input type="radio" name="membership" id="gold" value="gold"> Gold ($1000)</label>
+                
+            </fieldset>
+        </form>
     
     </main>    
     <footer>
         <script src="../js/script.js"></script>
+        <script src="../js/companies.js"></script>
         <!-- Contact information -->
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20710.97535126109!2d-64.72142424403098!3d-21.538500161060664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1617731202284!5m2!1ses-419!2sbo" 
             style="border:0;" allowfullscreen="" loading="lazy" id="tarija-map"></iframe>
         </div>
         <div class="contact">
-            <h4>Contact information</h4>
+            <a href="../contact_us/contact.html"><h4>Contact information</h4></a>
                 <ul>
                     <li>Chamber of Commerce</li>
                     <li>Tarija Calle España entre Ingavi y Bolivar</li>
                 </ul>
             <!-- Attributions page -->
-            <h4><a href="">Attributions</a></h4>
+            <!-- <h4><a href="">Attributions</a></h4> -->
         </div>
+        
         <!-- Social section -->
         <div class="social">
-            <img src="../images/rsz_facebook_logo.png" alt="facebook logo">
-            <img src="../images/rsz_instagram_logo.png" alt="insta logo">
-            <img src="../images/rsz_whatsapp_logo.png" alt="whatsapp logo">
+            <img src="../images/rsz_facebook_logo.png" alt="facebook logo" loading="lazy">
+            <img src="../images/rsz_instagram_logo.png" alt="insta logo" loading="lazy">
+            <img src="../images/rsz_whatsapp_logo.png" alt="whatsapp logo" loading="lazy">
         </div> 
     </footer>
     <div class="copyrigth">
