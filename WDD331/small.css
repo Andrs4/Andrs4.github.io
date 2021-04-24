@@ -1,0 +1,45 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #FAEBD7;
+}
+h1 a, h2 a {
+    font-family:'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* ======== Header ======== */
+header {
+    background-color: #6495ED;
+    color: white;
+    text-align: end;
+    padding: 2em;
+    margin-bottom: 0;
+
+}
+header a {
+    color: white;
+}
+
+/* ======== Main ======== */
+main {
+
+    margin: 0 auto; 
+    align-content: center;
+    justify-content: center;
+}
+article {
+    margin: 16px;
+    padding: 8px;
+    background-color: white;
+}
+article figure {
+    text-align: center;
+}
