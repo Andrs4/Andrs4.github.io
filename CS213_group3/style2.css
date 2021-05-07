@@ -1,3 +1,36 @@
-body { 
-    font-size:12px; 
+p.dotted {border-style: dotted;}
+
+h1, h2, h3, h4{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+p {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+body {  
+    font-size: 12px; /* font-size:20px;  */
+    background-color: rgba(0, 255, 234, 0.15);
+}
+a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+#title {
+    text-align: center;
+    font-size: 40px; 
+}
+#menuBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#menuBarList {
+    grid-column: 1;
+}
+ul li {
+    padding: 20px;
+    list-style-type: square;
+
 }
