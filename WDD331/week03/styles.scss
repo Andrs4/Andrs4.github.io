@@ -1,0 +1,78 @@
+/* colors */
+$body-background-color: rgb(135, 206, 235, 0.2);
+$form-background-color: grey;
+$input-color: white;
+$headlines-color: skyblue;
+
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
+@mixin center($width, $max-width: 960px) {
+    width: $width;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+body {
+    background-color: $body-background-color;
+}
+
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+
+    @mixin breakpoint($break) {
+        @if $break == large {
+        @media (max-width: $break-large) { 
+            & {
+                @include center(70%, 900px);
+            }
+            }
+        }
+
+        @else if $break == medium {
+        @media (max-width: $break-medium) { 
+            & {
+                @include center(80%, 930px);
+            }
+            }
+        }
+
+        @else if $break == small {
+        @media (max-width: $break-small) {
+            & {
+            @include center(90%);
+            }
+            }
+        }
+        @else {
+        @media ($break) { @content; }
+        }
+        }  
+    /*@media (min-width: $break-small) {
+       & {
+          /*width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;  
+          @include center(90%);
+        } 
+    }
+    @media (min-width: $break-medium) {
+        & {
+            @include center(80%, 930px)
+        }
+    }
+    @media (min-width: $break-large){
+        & {
+            /* width: 70%;
+            max-width: 900px;
+            @include center(70%, 900px)
+        }
+    }*/
+}

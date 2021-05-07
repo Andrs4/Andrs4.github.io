@@ -1,0 +1,35 @@
+/* colors */
+body {
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+#contactform {
+  background-color: grey;
+  /*@media (min-width: $break-small) {
+     & {
+        /*width: 90%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;  
+        @include center(90%);
+      } 
+  }
+  @media (min-width: $break-medium) {
+      & {
+          @include center(80%, 930px)
+      }
+  }
+  @media (min-width: $break-large){
+      & {
+          /* width: 70%;
+          max-width: 900px;
+          @include center(70%, 900px)
+      }
+  }*/
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */
