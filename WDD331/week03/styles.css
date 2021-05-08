@@ -3,33 +3,66 @@ body {
   background-color: rgba(135, 206, 235, 0.2);
 }
 
-#contactform {
-  background-color: grey;
-  /*@media (min-width: $break-small) {
-     & {
-        /*width: 90%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;  
-        @include center(90%);
-      } 
-  }
-  @media (min-width: $break-medium) {
-      & {
-          @include center(80%, 930px)
-      }
-  }
-  @media (min-width: $break-large){
-      & {
-          /* width: 70%;
-          max-width: 900px;
-          @include center(70%, 900px)
-      }
-  }*/
+#contactform > fieldset {
+  background-color: rgba(135, 206, 235, 0.2);
 }
-#contactform input, #contactform textarea {
+#contactform > fieldset input, #contactform > fieldset textarea {
   background-color: white;
   flex: 2;
+}
+@media (max-width: 60em) {
+  #contactform > fieldset {
+    background: red;
+    width: 900px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 31em) {
+  #contactform > fieldset {
+    background: cyan;
+    width: 700px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 20em) {
+  #contactform > fieldset {
+    background: green;
+  }
+}
+
+#contactform fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+#contactform fieldset > div label {
+  flex: 1;
+  text-align: left;
+}
+@media (max-width: 31em) {
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  #contactform fieldset > div label {
+    text-align: right;
+    margin-right: 1em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
