@@ -1,3 +1,68 @@
-body { 
-    font-size:12px; 
+/*
+By: Makoto Hirata
+*/
+body {  
+    font-size: 12px; /*font-size:50px;*/ 
+    background-color: rgb(115, 255, 0, 0.15);
 }
+p {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size:35px;
+}
+h1, h2, h3, h4{
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(115, 255, 0, 0.15);
+    text-align: center;
+}
+
+#title {
+    background-color: rgb(115, 255, 0);
+    color: white;
+    text-align: center;
+}
+li {
+    font-size:35px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #f1f1f1;
+    font-size:50px;
+}
+
+li.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li:hover:not(.active) {
+  background-color: green;
+  color: white;
+}
+
+a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  font-size:50px;
+}
+
+a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a:hover:not(.active) {
+  background-color: green;
+  color: white;
+}
+
+li {
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+}
+
