@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$headings-font: 'Lora', serif;
+$body-background-color: #FAEBD7; 
+$header-a-color: #FAEBD7;
+$a-color: #6495ED;
+$header-background: $a-color;
+$box-shadow: 3px 4px 6px 0px #ccc;
+$article-img-max-width: 100%;
+$post-date: gray;
+$list-decoration: none;
+
+$break-medium: 31em;
+$break-small: 20em;
+
+@mixin breakpoint($break) {
+    @if $break == medium {
+        @media (max-width: $break-medium) {@content;}
+    }
+    @else {
+        @media ($break) { @content; }}
+}
+
+@mixin article() {
+    margin: 16px;
+    padding: 2.2em;
+    background-color: white;
+    box-shadow: 3px 4px 6px 0px #ccc;
+    figure {
+        text-align: center;
+        padding: 15px;
+        margin: 50px 0 0 0;
+    }
+    article figure img {
+        max-width: 100%;
+    }
+    h2 {
+        margin-top: 3px;
+    }
+    .post-date {
+        color: gray;
+    }
+}
+
+@mixin header() {
+    header {
+        background-color: $header-background;
+        color: $header-a-color;
+        text-align: end;
+        padding: 2em;
+        margin-bottom: 0;
+        nav a:link, nav a:visited, a:link, a:visited {
+            color: $header-a-color;
+        }
+        nav a:hover {
+            color:white;
+            text-decoration: underline;
+        }
+    }
+}
+@mixin body-grid() {
+    div {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+    }
+    header {
+        grid-column: 1 / 2;
+    }
+    main {
+        grid-column: 2;
+    }
+    article {
+        margin: 5em;
+    }
+}
+
+body {
+    @include header();
+    a:active, a:visited, .post-content h1 a:hover, .post-content h2 a:hover {
+        color: $a-color;
+    }
+    li {
+        list-style-type: $list-decoration;
+    }
+    article{
+        @include article();
+        }
+    @include breakpoint(medium) {
+        @include body-grid();
+    }
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body header {
+  background-color: #6495ED;
+  color: #FAEBD7;
+  text-align: end;
+  padding: 2em;
+  margin-bottom: 0;
+}
+body header nav a:link, body header nav a:visited, body header a:link, body header a:visited {
+  color: #FAEBD7;
+}
+body header nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+body a:active, body a:visited, body .post-content h1 a:hover, body .post-content h2 a:hover {
+  color: #6495ED;
+}
+body li {
+  list-style-type: none;
+}
+body article {
+  margin: 16px;
+  padding: 2.2em;
+  background-color: white;
+  box-shadow: 3px 4px 6px 0px #ccc;
+}
+body article figure {
+  text-align: center;
+  padding: 15px;
+  margin: 50px 0 0 0;
+}
+body article article figure img {
+  max-width: 100%;
+}
+body article h2 {
+  margin-top: 3px;
+}
+body article .post-date {
+  color: gray;
+}
+@media (max-width: 31em) {
+  body div {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+  }
+  body header {
+    grid-column: 1/2;
+  }
+  body main {
+    grid-column: 2;
+  }
+  body article {
+    margin: 5em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
