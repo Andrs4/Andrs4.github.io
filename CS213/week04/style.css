@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Heebo:wght@300&family=Libre+Baskerville:wght@700&display=swap');
+
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.header_img {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+.ilumina_logo {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  width: 70%;
+  margin-top: 30px;
+}
+header button {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  margin-top: 100px;
+  margin-right: 20px;
+  width: 66px;
+  height: 46px;
+  color: red;
+  background-color: pink;
+}
+nav {
+  font-family: 'Bodoni Moda', serif;
+  background-color: black;
+  list-style: none;
+  text-align: center;
+}
+
+footer {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+footer a:hover {
+  color: white;
+}
+h1{
+    font-family: 'Libre Baskerville' , serif;
+    background-color:hotpink ;
+}
+div {
+  background-color: rgb(255, 0, 0, 0.5);
+}
+p{
+    font-family: 'Heebo', sans-serif;
+}
+
+.info {
+  grid-column: 1 / 4;
+}
+#social {
+  grid-row: 1;
+  grid-column: 4 / 5;
+}
+div a img {
+  padding-left: 20%;
+  width: 12%;
+}
