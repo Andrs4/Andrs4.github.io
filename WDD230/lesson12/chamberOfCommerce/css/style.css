@@ -8,6 +8,11 @@ body {
 h1{
   font-family: 'Merienda One', cursive;
 }
+/* added for a seminary class*/
+.seminary {
+  background-color: yellow;
+  text-shadow: teal;
+}
 
 /* =============== Header =============== */
 .hero-header {
