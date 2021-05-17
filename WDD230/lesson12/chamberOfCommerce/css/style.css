@@ -387,7 +387,7 @@ footer li {
 
 /* added for a seminary class*/
 
-li.seminary {
+li#seminary {
     background-color: yellow;
     text-shadow: teal;
 }
