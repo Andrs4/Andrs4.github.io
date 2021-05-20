@@ -1,0 +1,41 @@
+
+small.css
+  3:5   ×  Expected indentation of 2 spaces                                 indentation                              
+  5:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+  5:4   ×  Expected single space before "{"                                 block-opening-brace-space-before         
+  6:5   ×  Expected indentation of 2 spaces                                 indentation                              
+  7:5   ×  Expected indentation of 2 spaces                                 indentation                              
+  7:23  ×  Expected "#FAEBD7" to be "#faebd7"                               color-hex-case                           
+  9:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+  9:5   ×  Expected newline after ","                                       selector-list-comma-newline-after        
+ 10:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 10:17  ×  Expected single space after ":" with a single-line declaration   declaration-colon-space-after            
+ 12:1   ×  Expected selector "a" to come before selector "h1 a"             no-descending-specificity                
+ 12:1   ×  Expected selector "a" to come before selector "h2 a"             no-descending-specificity                
+ 12:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+ 13:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 15:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+ 16:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 18:1   ×  Expected empty line before comment                               comment-empty-line-before                
+ 20:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 20:23  ×  Expected "#6495ED" to be "#6495ed"                               color-hex-case                           
+ 21:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 22:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 23:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 24:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 26:1   ×  Unexpected empty line before closing brace                       block-closing-brace-empty-line-before    
+ 27:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+ 28:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 34:5   ×  Unexpected empty line before declaration                         declaration-empty-line-before            
+ 34:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 34:20  ×  Expected newline after ";" in a multi-line declaration block     declaration-block-semicolon-newline-after
+ 34:20  ×  Unexpected whitespace at end of line                             no-eol-whitespace                        
+ 35:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 36:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 38:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+ 39:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 40:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 41:5   ×  Expected indentation of 2 spaces                                 indentation                              
+ 43:1   ×  Expected empty line before rule                                  rule-empty-line-before                   
+ 44:5   ×  Expected indentation of 2 spaces                                 indentation
+
