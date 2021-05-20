@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani&display=swap');
+
+body {
+    background-color: rgb(255, 0, 0, 0.2);
+    display: block;
+    font-family: "Merriweather", serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+header, main, div, footer{
+  display: block;
+  max-width: 960px;
+  margin: 1rem auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: double red;
+}
+
+.images {
+    width: 23%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    max-width: 100%;
+}
+
+
+@media (min-width: 32.5em) {
+    body {
+        background-color: rgb(255, 0, 0);
+        font-size: 1.2rem;
+        color: white;
+    }
+    .images {
+        display: inline-flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 60em) {
+    body {
+        font-size: 1.5rem;
+    }
+    h1, h2, h3{
+        color:black;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    img {
+        border: silver double ;
+    }
+}
