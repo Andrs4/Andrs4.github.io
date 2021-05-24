@@ -1,0 +1,14 @@
+/* First reading activity */
+
+#star {
+    fill: rgb(255,185,0);
+}
+
+circle {
+    fill: cornflowerblue;
+    stroke: darkblue;
+    stroke-width: 10;
+    stroke-dasharray: 10, 15;
+    stroke-linecap: round;
+}
+

@@ -1,0 +1,18 @@
+/* Second reading activity */
+
+@keyframes twinkle {
+    from {
+        fill-opacity: .4;
+    }
+    to {
+        fill-opacity: 0;
+        transform: scale(2);
+    }
+}
+.star {
+    fill: rgb(255,195,0);
+    transform-origin: 50% 50%;
+}
+.twinkle {
+    animation: twinkle 1.5s infinite forwards ease-in;
+}

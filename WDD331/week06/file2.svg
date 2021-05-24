@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
+ y="0px" viewBox="0 0 497 184" xml:space="preserve">
+    <defs>
+        <link href="twinkle.css" type="text/css" rel="stylesheet"
+ xmlns="http://www.w3.org/1999/xhtml"/>
+    </defs>
+    <polygon class="star" points="77,23.7 98.2,66.6 145.5,66.5 111.2
+,106.9 119.3,154 77,131.8 34.7,154 42.8,106.9 8.5,67.5
+ 55.8,66.6 "/>
+    <polygon class="star twinkle" points="77,23.7 98.2,66.6 145.5,
+66.5 111.2,106.9 119.3,154 77,131.8 34.7,154 42.8,106.9
+ 8.5,67.5 55.8,66.6 "/>
+</svg>
