@@ -1,0 +1,24 @@
+<svg version="1.1" id="HexagonLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ viewBox="0 0 555 174" xml:space="preserve">
+    <defs>
+        <style type="text/css">
+            @media (max-width: 20em) {
+                [id=word-mark] {
+                    display: none;
+                }
+            }
+        </style>
+    </defs>
+    <g id="hex">
+        <polygon id="hexagonbg" points="55.2,162 10,86.5 55.2,11 145.5,11 190.7,86.5 145.5,162  "/>
+        <path id="letterH" fill="#FFFFFF" d="M58,35.5h33v35.2h18.4V35.5 h33.2v103.4h-33.2v-38.3H91v38.3H58V35.5z M77.5,126.5V87.3h45.6v39.2h4V47.9h-4v35.6H77.5V47.9h-4v78.6H77.5z"/>
+    </g>
+    <g id="word-mark">
+        <g id="hexagon-word">
+            ...
+        </g>
+        <g id="web-design-and-dev">
+            ...
+        </g>
+    </g>
+</svg>
