@@ -103,6 +103,9 @@ Here is our group code!
     display: flex;
     flex-direction: column;
   }
+
+@media only screen and (min-width:100px) and (max-width: 600px) {
+
   .blue_rounded {
       font-size: 2rem;
       border-radius: 1rem;
@@ -145,7 +148,8 @@ Here is our group code!
   .placeholder_image {
     height: 22rem;
   }
-@media only screen and (min-width: 1000px) {
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
     body {
         background-color: green;
         font-size: 1em;
@@ -171,9 +175,8 @@ Here is our group code!
         flex-flow: wrap;
       }
     }
-}
 
-@media only screen and (min-width: 1300px){
+@media only screen and (min-width: 1000px){
     body {
         background-color: blue;
       }
