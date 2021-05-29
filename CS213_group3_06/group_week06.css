@@ -85,7 +85,8 @@ ul {
 /* ================================
 Here is our group code!
 ================================== */
-@media only screen and (max-width: 600px) {
+
+/*@media only screen and (max-width: 600px) {*/
 #flex_first {
     display: flex;
     align-items: center;
@@ -144,7 +145,8 @@ Here is our group code!
   .placeholder_image {
     height: 22rem;
   }
-}
+/*  }  */
+
 @media only screen and (min-width:600px) {
     body {
         background-color: green;
