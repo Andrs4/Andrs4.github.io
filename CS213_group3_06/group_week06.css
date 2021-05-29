@@ -125,7 +125,7 @@ Here is our group code!
     border-radius: 1rem;
     padding: 2rem;
   }
-  .box1,
+  /* .box1,
   .box2,
   .box3,
   .box4,
@@ -135,7 +135,7 @@ Here is our group code!
   .box8 {
     height: 5em;
     font-size: 2rem;
-  }
+  } */
   .box9 .blue_rounded{
     font-size: 0.8rem;
     padding: 1.5em;
@@ -171,11 +171,18 @@ Here is our group code!
         align-items: center;
         justify-content: center;
         flex-flow: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
       }
 
       .placeholder_image {
-        height: 18rem;
+        height: 16rem;
       }
+      .box9 .blue_rounded {
+        margin: 1rem;
+      }
+
     }
 
 @media only screen and (min-width: 1000px){
@@ -188,7 +195,7 @@ Here is our group code!
       }
     
       #grid_second {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2fr 3fr 2fr;
         grid-template-rows: repeat(4, 1fr);
       }
     
@@ -201,9 +208,21 @@ Here is our group code!
         align-items: center;
         justify-content: center;
         flex-flow: nowrap;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .blue_rounded {
+        padding: 0.5em;
+        border-radius: 0.5rem;
+      }
+      .placeholder_image {
+        height: 12rem;
+      }
+      .box9 {
+        text-align: center;
+      }
+      .box9 .blue_rounded {
+        padding: 1.5em;
+        border-radius: 0.5rem;
       }
 
-      .placeholder_image {
-        height: 15rem;
-      }
 }
