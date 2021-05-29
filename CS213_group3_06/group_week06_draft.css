@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#flex_first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#flex_second li.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#flex_second fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#grid_first {
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+#grid_second {
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+#grid_second > div {
+  min-height: 100px;
+}
+
+#grid_second .box9 {
+  display: flex;
+}
+.white_rounded {
+  font-size: 1.5rem;
+}
+

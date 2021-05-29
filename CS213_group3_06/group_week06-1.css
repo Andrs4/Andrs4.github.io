@@ -1,0 +1,124 @@
+#flex_first{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+
+.form-row{
+display: flex;
+flex-direction: column;
+}
+
+#hair, #cookie{
+display: flex;
+flex-direction: column;
+}
+
+@media screen and (min-width: 1200px){
+#grid_first{
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-gap: 1rem 1rem;
+}
+}
+
+@media screen and (max-width: 1200px){
+#grid_first{
+display: grid;
+grid-template-columns: auto auto;
+grid-gap: 1rem 1rem;
+}
+}
+
+@media screen and (max-width: 600px){
+#grid_first{
+display: grid;
+grid-template-columns: auto;
+grid-gap: 1rem 1rem;
+}
+}
+
+
+
+@media screen and (min-width: 1200px){
+#grid_second{
+display: flex;
+flex-wrap: wrap;
+grid-gap: 1rem 1rem;
+}
+
+#grid_second > .box1{
+  width: 100%;
+  min-height:200px;
+}
+
+#grid_second > .box2, #grid_second > .box3, #grid_second > .box4,   #grid_second > .box5, #grid_second > .box6, #grid_second > .box7, #grid_second > .box8{
+  width: 32.3%;
+  min-height:100px;
+}
+
+
+#grid_second > .box9{
+  display: flex;
+  width: 32.3%;
+  justify-content: center;
+  min-height:100px;
+}
+}
+
+@media screen and (max-width: 1200px){
+#grid_second{
+display: flex;
+flex-wrap: wrap;
+grid-gap: 1rem 1rem;
+}
+
+#grid_second > .box1{
+  width: 100%;
+  min-height:200px;
+}
+
+#grid_second > .box2, #grid_second > .box3, #grid_second > .box4,   #grid_second > .box5, #grid_second > .box6, #grid_second > .box7, #grid_second > .box8{
+  width: 48.5%;
+  min-height:100px;
+}
+
+
+#grid_second > .box9{
+  display: flex;
+  width: 48.5%;
+  justify-content: center;
+  min-height:100px;
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 600px){
+#grid_second{
+display: flex;
+flex-direction: column;
+grid-gap: 1rem 1rem;
+}
+
+#grid_second > .box1{
+  width: 100%;
+  min-height:100px;
+}
+
+#grid_second > .box2, #grid_second > .box3, #grid_second > .box4,   #grid_second > .box5, #grid_second > .box6, #grid_second > .box7, #grid_second > .box8{
+  width: 100%;
+  min-height:100px;
+}
+
+#grid_second > .box9{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  min-height:100px;
+  align-items: stretch;
+}
+}
