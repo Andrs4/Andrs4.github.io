@@ -1,9 +1,15 @@
-margin-top: 1rem;
+body {
+  font-family: Arial, sans-serif;
 }
 
-#grid_second div {
-  margin-bottom: 1rem;
-  min-height: 100px;
+#flex_first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 #flex_second li.form-row {
   display: flex;
   flex-direction: column;
@@ -13,8 +19,6 @@ margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
-#grid_second > div.box9.white_rounded {
-  margin-bottom: 0rem;
 
 #grid_first {
   display: grid;
@@ -35,95 +39,7 @@ margin-top: 1rem;
 #grid_second .box9 {
   display: flex;
 }
-
-@media only screen and (max-width: 599px) {
-  body {
-  /* body {
-    background-color: red;
-  } */
-
-  #grid_first {
-    grid-template-columns: 1fr;
-  }
-
-  #flex_second li.form-row {
-    display: flex;
-    flex-direction: column;
-  #grid_second {
-    grid-template-columns: 1fr;
-  }
-
-  #flex_second fieldset {
-    display: flex;
-  #grid_second .box9 {
-    flex-direction: column;
-  }
+.white_rounded {
+  font-size: 1.5rem;
 }
 
-  #grid_first {
-    display: grid;
-  }
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
-  /* body {
-    background-color: green;
-  } */
-
-  #grid_first article {
-    margin-bottom: 1rem;
-  #grid_first {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #grid_first > article:nth-child(8) {
-    margin-bottom: 0rem;
-  }
-  #grid_second {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-
-  #grid_second .box9 {
-    flex-direction: column;
-  #grid_second .box1 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
-  body {
-    background-color: green;
-  #grid_second .box9 {
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  body {
-  /* body {
-    background-color: blue;
-  } */
-
-  #grid_first {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  #grid_second {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-
-  #grid_second .box1 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 2;
-  }
-
-  #grid_second .box9 {
-    align-items: center;
-    justify-content: center;
-    flex-flow: nowrap;
-  }
-}

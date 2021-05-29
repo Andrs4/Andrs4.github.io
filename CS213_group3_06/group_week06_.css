@@ -1,0 +1,23 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flex_first {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.center_list {
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.white-rounded {
+    border-radius: 5px;
+}
