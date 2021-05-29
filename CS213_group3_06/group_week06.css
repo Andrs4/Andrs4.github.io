@@ -85,7 +85,7 @@ ul {
 /* ================================
 Here is our group code!
 ================================== */
-
+@media only screen and (max-width: 600px) {
 #flex_first {
     display: flex;
     align-items: center;
@@ -103,9 +103,6 @@ Here is our group code!
     display: flex;
     flex-direction: column;
   }
-
-@media only screen and (min-width:100px) and (max-width: 600px) {
-
   .blue_rounded {
       font-size: 2rem;
       border-radius: 1rem;
@@ -119,8 +116,7 @@ Here is our group code!
   #grid_first,
   #grid_second {
     display: grid;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
+    grid-template-rows: 1fr ;
     grid-gap: 1rem;
   }
   #grid_first .white_rounded,
@@ -149,7 +145,7 @@ Here is our group code!
     height: 22rem;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
+@media only screen and (min-width:600px) {
     body {
         background-color: green;
         font-size: 1em;
@@ -173,6 +169,10 @@ Here is our group code!
         align-items: center;
         justify-content: center;
         flex-flow: wrap;
+      }
+
+      .placeholder_image {
+        height: 18rem;
       }
     }
 
@@ -199,5 +199,9 @@ Here is our group code!
         align-items: center;
         justify-content: center;
         flex-flow: nowrap;
+      }
+
+      .placeholder_image {
+        height: 15rem;
       }
 }
