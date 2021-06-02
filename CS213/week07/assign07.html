@@ -1,1 +1,32 @@
-This will be assignment #7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>JavaScript Mortgage Calculator</h1>
+        <form id="mort_calc" name="mortgage_calc" method="POST" action="undefined" onsubmit="return validateForm()">
+            <label>apr: </label><input class="blanks" type="number" step="any" min="0" max="25.00" id="apr" name="apr" value=""/>
+            <span class="error"><p id="apr_error"></p></span>
+
+            <label>Loan Term: </label><input class="blanks" type="number" min="0" max="40" id="term" name="APR" value=""/>
+            <span class="error"><p id="term_error"></p></span>
+
+            <label>Loan Amount: </label><input class="blanks" type="number" id="amount" name="amount" value=""/>
+            <span class="error"><p id="amount_error"></p></span>
+
+            <br>
+            <input class="buttons" type="submit" id="calculate" name="submit" value="Calculate" />
+            <label>Payment</label><input class="blanks" type="number" id="payment" name="mPmt"/>
+            <input class="buttons" type="reset" id="clear" value="Clear Form" />
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
