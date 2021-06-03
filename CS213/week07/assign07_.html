@@ -11,12 +11,12 @@
     <div class="calculator">
         <h1>JavaScript Mortgage Calculator</h1>
         <form action="" id="mort_calc">
-            <label for="">apr: </label>
-            <input class="blanks" type="text" name="" id="apr">
+            <label for="">apr: %</label>
+            <input class="blanks" type="text" name="" id="apr" onchange="validateApr()" onblur="validateApr()">
             <span class="error"><p id="apr_error"></p></span>
 
-            <label for="">Loan Term: </label>
-            <input class="blanks" type="text" id="term">
+            <label for="">Loan Term: $</label>
+            <input class="blanks" type="text" id="term" onblur="validateTerm()" >
             <span class="error"><p id="term_error"></p></span>
 
             <label for="">Loan Amount: </label>
@@ -24,7 +24,7 @@
             <span class="error"><p id="amount_error"></p></span>
 
             <br>
-            <input class="buttons" type="button" id="calculate" value="calculate">
+            <input class="buttons" type="button" id="calculate" value="calculate" onclick="getValues()">
             <label for="">Payment</label>
             <input class="blanks" id="payment" type="text">
             <input class="buttons" type="reset" id="clear" value="Clear form">
