@@ -33,11 +33,6 @@ span {
     grid-column: 2;
     align-content: flex-start;
 }
-span p{
-    color: tomato;
-    margin: 0 0 10px 0;
-}
-
 .buttons {
     background-color: rgb(255, 68, 0);
     color: white;
@@ -47,3 +42,9 @@ span p{
     margin-bottom: 5px;
 }
 
+#apr_error,
+#term_error,
+#amount_error {
+    color: red;
+    visibility: hidden;
+}
