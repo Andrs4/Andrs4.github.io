@@ -1,3 +1,4 @@
+//gets all values and calls a function to calculate payment
 function getValues() {
     validateForm()
     apr = document.getElementById("apr").value;
@@ -10,12 +11,12 @@ function getValues() {
     document.getElementById("payment").value = "$" + mPmt.toFixed(2);
 
 }
-
+//the function that calculates tha payment
 function calculatePayment() {
     var payment = amount*(apr * Math.pow((1 + apr), term))/(Math.pow((1 + apr), term) - 1);
     return payment
 }
-
+//checks for Apr values are correct
 function validateApr(){
     var apr = document.getElementById("apr").value;
     if(apr > 0 && apr <=25){
@@ -28,9 +29,9 @@ function validateApr(){
         document.getElementById("apr").focus();
         return false;
     }
-
 }
 
+//checks for Term values are correct
 function validateTerm(){
     var term = document.getElementById("term").value;        
     if(term > 0 && term <=40) {
@@ -45,6 +46,7 @@ function validateTerm(){
     }
 }
 
+//checks for Amount values are correct
 function validateAmount() {
     var amount = document.getElementById("amount").value;
     if(amount == null || amount == ""){
@@ -59,14 +61,15 @@ function validateAmount() {
     }
 }
 
+//this function checks for all imputs are correct to compute the calculation, and it calls the calculation function,
+//it also checks for all the form is well done
 function checkall(){
     if(validateApr() && validateTerm() && validateForm()) {
         getValues();
     }
 }
 
-
-
+//this validates all Form inputs are filled
 function validateForm() {
     var error = 0;
     var a = document.getElementById("apr").value;
@@ -100,10 +103,9 @@ function validateForm() {
     return true;
 }
 
+//this hides all error
 function clearingErr(){
     document.getElementById("apr_error").style.visibility = "hidden";
     document.getElementById("term_error").style.visibility = "hidden";
-    document.getElementById("amount_error").style.visibility = "hidden";
-
-    
+    document.getElementById("amount_error").style.visibility = "hidden";   
 }
