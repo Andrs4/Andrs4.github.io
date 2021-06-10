@@ -1,1 +1,45 @@
-This will be assignment #8
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <form id="form_val" name="form_val" method="POST" action="undefined" onsubmit="return callFunc()">
+            <fieldset>
+                <label class="top">First Name<input class="personal" type="text" name="fname" id="fname" required></label>
+                <label class="top">Last Name <input class="personal" type="text" name="lname" required></label>
+                <label class="top">Address <input class="personal" type="text" name="address" required></label>
+                <label class="top">Phone 
+                    <input class="personal" type="text" name="phone" id="phone" placeholder="xxx-xxx-xxxx">
+                    <span class="error"><p id="phone_error"></p></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label class="sbs"><input type="number" name="item_1" id="item_1"> item1</label>
+                    <label class="sbs"><input type="number" name="item_2" id="item_2"> item2</label>
+                    <label class="sbs"><input type="number" name="item_3" id="item_3"> item3</label>
+                    <label class="sbs"><input type="number" name="item_4" id="item_4"> item4</label>
+                </div>
+                <label>Total<span id="total_inputs"></span></label>
+            </fieldset>
+            <fieldset>
+                <label class="sbs"><input type="radio" name="card" class="card" id="visa"> Visa</label>
+                <label class="sbs"><input type="radio" name="card" class="card" id="mastercard"> MasterCard</label>
+                <label class="sbs"><input type="radio" name="card" class="card" id="american-express"> American Express</label>
+                <label class="top">Credit Card # <input type="text" name="credit_card" id="card"></label>
+                <span class="error"><p id="card_error"></p></span>
+                <label class="top">Expiration Date <input type="text" name="exp_date" id="exp_date"></label>
+            </fieldset>
+            <label><input class="buttons" type="reset" name="reset" value="Reset"></label>
+            <label><input class="buttons" type="submit" name="validate" value="Submit" id="validate"></label>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
