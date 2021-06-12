@@ -11,19 +11,43 @@
     <main>
         <form id="form_val">
             <fieldset>
-                <label class="top">First Name<input class="personal" type="text" name="first_name"></label>
-                <label class="top">Last Name <input class="personal" type="text" name="last_name"></label>
+                <label class="top">First Name<input class="personal" type="text" name="first_name" id="first_name"><span class="error" id="fName_error"></span></label>
+                <label class="top">Last Name <input class="personal" type="text" name="last_name" id="last_name"><span class="error" id="lastName_error"></span></label>
                 <!-- street address, city, state, and zip -->
-                <label class="top">Address <input class="personal" type="text" name="address"></label>
+                <label class="top">Address <input class="personal" type="text" name="address" id="address"><span class="error" id="address_error"></span></label>
                 <label class="top">Phone
-                    <input class="personal" type="text" name="phone">
-                    <span class="error"><p id="phone_error"></p></span>    
+                    <input class="personal" type="text" name="phone" id="phone" onkeyup="phoneValidation()" placeholder="###-###-####">
+                    <span class="error" id="phone_error">Insert a valid format number </span>    
                 </label>
             </fieldset>
             <fieldset>
-                
+                <div>
+                    <label class="sbs"><input type="number" name="item_0" id="item_0" onkeyup="calculation()" onchange="items()"> item1 </label>
+                    <label class="sbs"><input type="number" name="item_1" id="item_1" onkeyup="calculation()" onchange="items()"> item2 </label>
+                    <label class="sbs"><input type="number" name="item_2" id="item_2" onkeyup="calculation()" onchange="items()"> item3 </label>
+                    <label class="sbs"><input type="number" name="item_3" id="item_3" onkeyup="calculation()" onchange="items()"> item4 </label>
+                </div>
+                <label>Total $
+                    <span id="total_inputs"></span>
+                    <span class="error" id="inputs_error" style="visibility : hidden"></span>
+                </label>
             </fieldset>
+            <fieldset>
+                <label class="sbs"><input type="radio" name="card" class="card" id="visa"> Visa</label>
+                <label class="sbs"><input type="radio" name="card" class="card" id="masterCard"> MasterCard</label>
+                <label class="sbs"><input type="radio" name="card" class="card" id="americanExpress"> American Express</label>
+                <span class="error" id="no_card_error">You have to select one</span>
+
+                <label class="top">Credit Card # <input type="text" name="credit_card" id="card" onkeyup="creditCardValidation()" placeholder="1111 1111 1111 1111" required></label>
+                <span class="error" id="card_error">This is not a valid Card number</span>
+                
+                <label class="top">Expiration Date <input type="text" name="exp_date" id="exp_date" onkeyup="expirationDateValidation()" placeholder="MM/YYYY" required></label>
+                <span class="error" id="exp_error">This is not a valid Date</span>
+            </fieldset>
+            <label><input type="reset" class="buttons" name="reset" value="reset" onclick="clearingErr()"></label>
+            <label><input type="button" class="buttons" name="validate" value="submit" id="validate" onclick="validateForm()"></label>
         </form>
     </main>
+    <script src="js/assign08.js"></script>
 </body>
 </html>

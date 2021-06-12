@@ -1,6 +1,4 @@
-body {
 
-}
 form {
     max-width: fit-content;
     min-width: 250px;
@@ -35,4 +33,8 @@ form label.top input {
     max-width: fit-content;
     border-radius: 0.5em;
     margin-bottom: 5px;
+}
+.error {
+    visibility: hidden;
+    color : red;
 }
