@@ -1,0 +1,9 @@
+//variables for the use of font
+$family-principal:unquote("Berkshire+Swash&display=swap");
+$family-secondary: unquote("Inconsolata&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=#{$family-principal}');
+@import url('https://fonts.googleapis.com/css2?family=#{$family-secondary}');
+
+$font-principal:'Berkshire Swash', cursive;
+$font-secondary:'Inconsolata', monospace;

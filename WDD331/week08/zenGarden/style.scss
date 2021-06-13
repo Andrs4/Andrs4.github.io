@@ -1,0 +1,318 @@
+$color1:#000;
+$color2:#404040;
+$color3:#202020;
+$color4:#e0e0e0;
+$color5:#808080;
+$gradient-color: linear-gradient(to right top, #292a2c, #4c5052, #737a7a, #9fa6a2, #d1d3cc);
+
+$family-principal:unquote("Berkshire+Swash&display=swap");
+$family-secondary: unquote("Inconsolata&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=#{$family-principal}');
+@import url('https://fonts.googleapis.com/css2?family=#{$family-secondary}');
+
+$font-principal:'Berkshire Swash', cursive;
+$font-secondary:'Inconsolata', monospace;
+
+/*All code above is from imported files, below is added scss code.*/
+
+
+$font-h1-size: 4em;
+$font-h2-size: 1em;
+
+body {
+    font-family: $font-secondary;
+
+}
+
+h1, h2, h3 {
+    font-family: $font-principal;
+}
+/*--images--*/
+
+@media (max-width:60em){
+    .intro {
+        display: flex;
+        flex-flow: column;
+    }
+    .intro header {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        //background-image: url('../images/image1.jpeg');
+
+        text-align: center;
+
+    }
+    .intro header h1 {
+        color: $color4;
+        background-color: $color1;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        font-size: $font-h1-size;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+    .intro header h2 {
+       border: solid black 2px;
+       padding: .3em;
+       width: 50%;
+       align-self: center;
+       font-size: $font-h2-size;
+       font-family: $font-secondary;
+       font-weight: bolder;
+    }
+
+    .intro .summary {
+       padding: 2%;
+    }
+
+    .intro .preamble {
+      display: flex;
+      flex-flow: column;
+      background-color: $color2;
+      color: $color4;
+      padding-left: 4%
+    }
+    .intro .preamble h3 {
+      letter-spacing: .2em;
+    }
+    .intro .preamble p {
+      margin-top: 0;
+    }
+
+    .main {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .main .explanation {
+        display: flex;
+      flex-flow: column;
+      text-align: right;
+      background-color: $color4;
+      color: $color1;
+      padding-right: 4%;
+      margin-top: 2em;
+    }
+    .main .explanation h3 {letter-spacing: .2em;}
+    .main .explanation p {margin-top: 0;}
+
+    .main .participation {
+        display: flex;
+      flex-flow: column;
+      text-align: left;
+      background-color: $color5;
+      color: $color1;
+      padding-left: 4%;
+      margin-top: 2em;
+    }
+    .main .participation h3 {letter-spacing: .2em;}
+    .main .participation p {margin-top: 0;}
+
+    .main .benefits {
+        display: flex;
+      flex-flow: column;
+      text-align: right;
+      background-color: $color2;
+      color: $color4;
+      padding-right: 4%;
+      margin-top: 2em;
+    }
+    .main .benefits h3 {letter-spacing: .2em;}
+    .main .benefits p {margin-top: 0;}
+
+    .main .requirements {
+        display: flex;
+      flex-flow: column;
+      text-align: left;
+      background-color: $color4;
+      color: $color1;
+      padding-left: 4%;
+      margin-top: 2em;
+    }
+    .main .requirements h3 {letter-spacing: .2em;}
+    .main .requirements p {margin-top: 0;}
+
+    //sidebar
+    /* The side navigation menu */
+    .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+
+    .title-menu{
+      font-family:$family-principal;
+      color:$color4;
+    }
+
+    li{
+      list-style-type:none;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    .button{
+      margin-top:2em;
+    }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media (min-width: 60em) {
+    $height-title : 15rem;
+    $padding-top: 5rem;
+    $sidebar-width: 17rem;
+    $left-padding: 0.5rem;
+    $images-opacity: 0.5;
+    * {
+        margin: 0;
+    }
+    body {
+        background-color: #404040;
+    }
+    header h1 {
+        font-size: 3rem;
+        background-color: black;
+        color: white;
+        height: $height-title;
+        text-align: center;
+        float: inherit;
+        padding-top: $padding-top;
+    }
+    header h1::before {
+        content: url("images/logo2.png");
+    }
+    
+    .sidebar {
+        background-color: #404040;
+        color: white;
+        position: absolute;
+        left: 0%;
+        top : $height-title + $padding-top;
+        width: $sidebar-width;
+        text-align: left;
+        margin: $left-padding 0 0 $left-padding;
+    }
+    header h2,
+    .summary,
+    .preamble,
+    .main {
+        margin-left: $sidebar-width + $left-padding;
+        padding-left: $left-padding;
+        background-color: white;
+        padding-top: $left-padding;
+        text-align: center;
+    }
+    
+    header h2 {
+        font-size: 2rem;
+        text-shadow: 2px 2px #404040;
+    }
+    .intro .preamble {
+        padding-bottom: $left-padding* 2;
+    }
+    .main {
+        padding-top: $left-padding;
+        border-top: 2px solid;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+    
+        max-width: 100%;
+    }
+    
+    .explanation::before {
+        content: url("images/image1.jpeg");
+        opacity: $images-opacity;
+    }
+    .explanation {
+        grid-column: 1 / 4;
+    }
+    .participation::before {
+        content: url("images/image2.jpeg");
+        opacity: $images-opacity;
+    }
+    .participation {
+        grid-column: 1 / 4;
+    }
+    .benefits::before {
+        content: url("images/image3.jpeg");
+        opacity: $images-opacity;
+    }
+    .benefits {
+        grid-column: 1 / 4;
+    }
+    .requirements::before {
+        content: url("images/image5.jpeg");
+        opacity: $images-opacity;
+    }
+    .requirements {
+        grid-column: 1 / 4;
+    }
+    
+    footer {
+        grid-column: 1 / 4;
+        position: relative;
+        bottom: 0;
+        background-color: black;
+    }
+    p{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+    
+    ul li a{
+        display: block;
+        text-decoration-line: none;
+        color:white;
+    }
+    ul li {
+        list-style: none;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
+    .closebtn,
+    button{
+        display: none;
+    }
+}
