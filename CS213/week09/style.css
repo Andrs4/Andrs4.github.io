@@ -1,0 +1,41 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+}
+input {
+    display: block;
+    margin: 5px 0;
+}
+
+h1{
+    margin-bottom: 0.2em;
+}
+
+p{
+    margin: 2px
+}
+
+.parts {
+    border: black solid;
+    border-radius: 0.5em;
+    padding: 5px;
+}
+
+
+
+#showInfo, #show{
+    padding: 0 10px;
+}
+#showInfo div{
+    margin-top: 15px;
+    background-color: lightblue;
+}

@@ -1,0 +1,425 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+a, a:hover {
+  color: $link-blue;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+//Andres Soruco's Code
+
+/* TAG STYLES */
+header {
+  margin-bottom: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+body, p, ul, ol {
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+}
+p, ul, ol {
+  font-family: "BYUI Merriweather","Merriweather","Palatino Linotype","Book Antiqua",Palatino,serif;
+  font-weight: 300;
+  margin: 0 0 24px;
+  line-height: 24px;
+}
+body {
+  background-color: #fff;
+  color: $body-font;
+  font-family: "BYUI Open Sans","Open Sans","Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "BYUI Open Sans","Open Sans","Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin: 36px 0 24px 0;
+}
+/*PRINCIPAL CLASSES*/
+.img-responsive {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 24px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+/*====== header =====*/
+header .site-banner {
+  background-color: $link-blue;
+  height: 60px;
+}
+header .white-text {
+    font-size: 30px;
+}
+.site-banner__left {
+  position: absolute;
+  padding: 10px;
+  background-color: $body-font;
+}
+.icon-byui-logo:before {
+  color:#fff;
+}
+.site-banner__left h1{
+  display: none;
+}
+.site-banner__right {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.site-banner__right a:first-child {
+  grid-column: 2 / 3;
+}
+.site-banner__right a{
+  margin: auto;
+}
+.text-white {
+  color: white;
+}
+.site-banner form div{
+  display: none;
+}
+//site header
+.site-header {
+  background-color: $light-gray;
+  margin: 0;
+  padding: 15px;
+  border-bottom: solid 1px;
+}
+.site-name {
+  margin: 0;
+}
+.site-name a{
+  width: calc(100% - 80px);
+  line-height: normal;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+header .site-name>a {
+  color: #525352;
+  text-decoration: none;
+  display: block;
+  margin-left: 55px;
+}
+/* ===== Main =====*/
+
+.container {
+  padding: 0 15px;
+}
+.info-banner {
+  background: black;
+  color: white;
+  padding: 20px 40PX;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px!important;
+  max-width: 600px;
+}
+.info-banner h2{
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.info-banner-button{
+  background-color: $link-blue;
+  color: #fff!important;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 24px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.info-banner-button a{
+ color: #fff;
+}
+.component-spacing {
+  margin-bottom: 36px!important;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* === card ===*/
+.card a{
+  display: block;
+}
+.home-ad-fig {
+  margin: 0!important;
+  border: 1px solid $med-gray;
+}
+.home-ad-caption {
+  padding: 6px 12px;
+}
+.float-right {
+  float: right!important;
+}
+.home-ad-icon {
+  font-size: 21px;
+}
+.icon-angle-right:before {
+  content: "";
+}
+
+.audience-button {
+  border: 1px solid $med-gray;
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  width: 100%;
+}
+
+.highlights-heading {
+  font-size: 22px;
+  margin: 0;
+  padding: 10px 20px;
+  color: #fff;
+}
+.highlights-heading.bg-gray {
+  border: 1px solid $dark-gray;
+}
+.bg-gray {
+  background-color: $dark-gray;
+}
+
+.highlights-link {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid $med-gray;
+  border-left: 1px solid $med-gray;
+  border-right: 1px solid $med-gray;
+  color: $link-blue;
+  padding: 8px 20px;
+}
+
+.d-block {
+  display: block !important;
+}
+.bg-blue{
+  background-color: $link-blue;
+  color: #fff;
+}
+.highlights-heading.bg-blue {
+  border: 1px solid $link-blue;
+}
+
+.highlights-calendar {
+  background-color: #fff;
+  border-left: none;
+  border-right: none;
+  font-size: 13px;
+  color: $body-font;
+  padding: 8px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 6fr;
+}
+.highlights-calendar :first-child {
+  font-weight: 700;
+}
+.highlights-list a{
+  border-bottom: 1px solid $med-gray;
+}
+
+/* articles */
+.hidden-xs {
+  display: none!important;
+}
+.article {
+  padding: 25px 0;
+  border-top: 1px solid $med-gray;
+}
+.article-date {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+h4, .h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+.article-abstract {
+  margin-bottom: 12px;
+}
+.btn-blue {
+  background-color: $link-blue;
+  color: #fff!important;
+}
+.page-links {
+  padding: 12px 0;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+/* message */
+.message-display {
+  width: 300px;
+  border: 1px solid #ADADAD;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  margin: 0px 10px;
+  transition: .25s opacity;
+  vertical-align: top;
+}
+.message-display-single {
+  width: 100%;
+}
+.message-title {
+  color: #0076c6;
+  font-size: 16px;
+  padding: 0px 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.message-description {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "BYUI Open Sans","Open Sans","Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: normal;
+}
+.message-display .message-btn {
+  margin-left: 20px;
+  background-color: #0076c6;
+  font-size: 13px;
+  color: #fff;
+}
+/* Icon extracted from BYU-Idaho */
+#contactUsButton, #customWebchatButton {
+  background: $link-blue;
+  border: none;
+  border-radius: 100%;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  fill: #fff;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 12%);
+  animation: chatButtonIn 0.3s ease-in-out 1;
+}
+
+@media (min-width : 700px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+    padding: 0;
+  }
+  header .site-header {
+    border:none;
+  }
+  header .site-name a{
+    font-size: 30px;
+  }
+  .site-banner__left{
+    height: 82px;
+    width: 82px;
+  }
+  .site-banner__left {
+    height: 82px;
+    width: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .main-content,
+  .secondary-content {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-column-gap: 25px;
+  }
+  .grid-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  .date{
+    min-width: 50px
+  }
+  .news-grid-large {
+
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-column-gap: 30px;
+  .hidden-xs {
+    display: flex!important;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-height: 70%;
+  }
+}
+}

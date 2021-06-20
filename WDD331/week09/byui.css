@@ -1,0 +1,221 @@
+/* <style><!-- .university-info-banner { background: black; color: white; padding: 20px 40PX; display: flex; flex-wrap: wrap; justify-content: center; } .info-banner-title-desc { margin-bottom: 10px; } .university-info-banner h2, .university-info-banner h3 { font-weight: 200; margin: 0px; } .university-info-banner h2 { font-size: 32px; } .university-info-banner h3 { font-size: 16px; margin-top: 10px; } .university-info-link-wrapper { display: flex; flex: 1; justify-content: center; align-items: center; } university-info-link-wrapper a { padding: 10px 20px; } @media (max-width: 1200px) { .university-info-banner h2, .university-info-banner h3 { text-align: center; } } @media (max-width: 991px) { .university-info-banner h2 { font-size: 24px; } .university-info-banner h3 { font-size: 14px; } } @media (max-width: 768px) { .info-banner-title-desc { width: 100%; } } @media (max-width: 530px) { .university-info-banner { padding: 20px; } } --></style> */
+
+#contactUsButton,
+#customWebchatButton {
+background: #0076B6;
+border: none;
+border-radius: 100%;
+z-index: 99999;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+box-sizing: border-box;
+bottom: 24px;
+right: 24px;
+width: 60px;
+height: 60px;
+color: #fff;
+fill: #fff;
+cursor: pointer;
+transition: all .15s ease-in-out;
+box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+animation: chatButtonIn 0.3s ease-in-out 1;
+}
+#contactUsButton.closed, {
+animation: chatButtonOut 0.3s ease-in-out 1;
+animation-fill-mode: forwards;
+}
+#contactUsButton:hover,
+#customWebchatButton:hover {
+background: #005d90;
+}
+#contactUsButton:active,
+#contactUsButton:focus,
+#customWebchatButton:active,
+#customWebchatButton:focus, {
+background: #005d90;
+outline:none;
+}
+.channelOptionShadow {
+position: fixed;
+bottom: 0;
+right: -310px;
+width: 310px;
+height: 310px;
+border-top-left-radius: 100%;
+background: rgba(0,0,0,0);
+animation: 0.5s fadeIn 1;
+animation-fill-mode: both;
+z-index: 100;
+}
+.channelButtons {
+position: fixed;
+bottom: 100px;
+right: 24px;
+z-index: 101;
+}
+.channelButton {
+width: 163px;
+height: 52px;
+color: #fff;
+font-family: Raleway, sans-serif;
+font-weight: bold;
+font-size: 18px;
+border: 1px solid rgba(255,255,255,0.2);
+border-radius: 7px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+transition: 0.15s ease-in-out all;
+cursor: pointer;
+}
+.channelButtons a {
+text-decoration: none;
+}
+.channelButton:hover {
+border-color: rgba(0,0,0,0.05);
+}
+.channelButton:active {
+border-color: rgba(0,0,0,0.15);
+}
+.channelButton .channelIcon {
+width: 50px;
+text-align: center;
+}
+.channelButton .channelIcon img {
+width: 34px;
+}
+.channelButton .channelIcon svg {
+margin: 0 auto;
+}
+#smsButton {
+background: #0076B6;
+}
+#smsButton:hover {
+background: #005d90;
+}
+#smsButton:active {
+background: #272d3a;
+}
+#webchatButton {
+background: #0076B6;
+}
+#webchatButton:hover {
+background: #005d90;
+}
+#webchatButton:active {
+background: #2e4c94;
+}
+#facebookButton {
+background: #0076B6;
+letter-spacing: 0.5px;
+}
+#facebookButton:hover {
+background: #005d90;
+}
+#facebookButton:active {
+background: #2e4c94;
+}
+.channelButtonIn {
+animation: channelButtonIn 0.3s ease-in-out 1;
+animation-fill-mode: both;
+}
+#contactChannelContainer.channelButtonsOut .channelButtonIn {
+animation-name: channelButtonOut;
+}
+#contactChannelContainer.channelButtonsOut .channelOptionShadow {
+animation-name: fadeOut;
+}
+.channelButtonIn-0 {
+animation-delay: 0;
+}
+.channelButtonIn-1 {
+animation-delay: calc(0.1s * 1);
+}
+.channelButtonIn-2 {
+animation-delay: calc(0.1s * 2);
+}
+.channelButtonIn-3 {
+animation-delay: calc(0.1s * 3);
+}
+.a#webchatButton .channelLabel:hover {
+color: #fff;
+}
+
+.autoPopBubble {
+animation: autoPopIn 0.5s linear 1;
+animation-fill-mode: both;
+position: fixed;
+bottom: 24px;
+right: 100px;
+background: #fff;
+color: #333;
+padding: 12px;
+font-size: 14px;
+max-width: 300px;
+border-radius: 5px;
+box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.3);
+text-align: left;
+}
+.autoPopBubble.animateOut {
+animation: autoPopOut 0.25s linear 1; 
+animation-fill-mode: both;
+}
+
+.overlay {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background: #fff;
+border-radius: 5px;
+width: 30%;
+position: relative;
+transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+margin-top: 0;
+color: #333;
+
+}
+.popup .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: #333;
+}
+.popup .close:hover {
+color: #06D85F;
+}
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
+
+@media screen and (max-width: 500px){
+.box{
+width: 70%;
+}
+.popup{
+width: 70%;
+}
+}
