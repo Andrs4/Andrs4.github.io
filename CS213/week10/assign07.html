@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>JavaScript Mortgage Calculator</h1>
+        <form action="" id="mort_calc">
+            <label for="">apr: %</label>
+            <input class="blanks" type="text" name="" id="apr" onkeyup="validateApr()" onblur="validateApr()" onchange="getValues()">
+            <span class="error"><p id="apr_error"></p></span>
+
+            <label for="">Loan Term: $</label>
+            <input class="blanks" type="text" id="term" onkeyup="validateTerm()" onblur="validateTerm()" onchange="getValues()">
+            <span class="error"><p id="term_error"></p></span>
+
+            <label for="">Loan Amount: </label>
+            <input class="blanks" id="amount" type="text" onkeyup="validateAmount()" onblur="validateAmount()" onchange="getValues()">
+            <span class="error"><p id="amount_error"></p></span>
+
+            <br>
+            <input class="buttons" type="button" id="calculate" value="calculate" onclick="checkall()">
+            <label for="">Payment</label>
+            <input class="blanks" id="payment" type="text">
+            <input class="buttons" type="reset" id="clear" value="Clear form" onclick="clearingErr()">
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+form {
+    max-width: fit-content;
+    border: 2px solid;
+    padding: 2em 8em 2em;
+    min-width: 250px;
+    margin: 0 auto;
+    border-radius: 1em;
+    background-color: rgba(30, 235, 242, 0.5);
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center; 
+}
+
+form label {
+    grid-column: 1;
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+}
+
+form label.blanks{
+    grid-column: 2;
+    align-content: flex-start;
+}
+span {
+    grid-column: 2;
+    align-content: flex-start;
+}
+.buttons {
+    background-color: rgb(255, 68, 0);
+    color: white;
+    grid-column: 2 / -1;
+    max-width: fit-content;
+    border-radius: 0.5em;
+    margin-bottom: 5px;
+}
+
+#apr_error,
+#term_error,
+#amount_error {
+    color: red;
+    visibility: hidden;
+}
