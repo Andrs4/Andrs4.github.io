@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign 10 CS213</title>
-</head>
-<body onload="onLoad()">
 
-    <script src="assign10.js"></script>
-</body>
+<html lang = "en">
+    <head>
+        <title>Directory</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mortgage.css">  
+        <script type="text/javascript" src="assign10.js"></script>
+
+          <?php include("assign10.php"); ?>
+    </head>
+
+    <body onload="doPHP()">
+
+
+        <div id="wrapper">
+            <header>
+                <h1>Directory</h1>
+            </header>
+            <div class="topNav">
+                <nav>
+                    <a href="mortgage.html">Mortgage Calculator</a>
+                    <a href="assign10.html">Directory</a>
+                </nav>
+            </div>        
+        <main>
+            <div id="content">
+                <br />
+                <h3>Directory</h3>
+                
+                <p id="files"></p>
+            </div>
+            </main>
+
+            <br />
+            <div class="footer">
+                    <footer>
+                       <span style="color: #000000"> &copy; Luis Rodriguez / CS 213</span>
+                    </footer>
+                </div>   
+
+        </div>
+    </body>
 </html>

@@ -1,0 +1,9 @@
+Container 3
+1. first we two divs for halfs of a hole circle to the html
+2. then we center those divs in its container
+3. we set the width and height of the circle halfs
+4. we set the halfs color
+5. we set the radius to each div to make them a each half of a circle
+6. we create a @keyframe for the first and second halfs to make it separe
+7. we add the @keyframenames animations to its given classes.
+8. Tha ta!!! its done 

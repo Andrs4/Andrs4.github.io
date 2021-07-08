@@ -1,0 +1,85 @@
+body {
+    background: darkgray;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.menu-icon {
+    display: flex;
+    position: absolute;
+    top:5%;
+    left:8%;
+    height: 39px;
+    width: 50px;
+    background: transparent;
+
+}
+.menu-icon span{
+
+    width: 50px;
+    height: 6px;
+    background: gray;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+#menu-icon:hover {
+    background: white;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .4);
+}
+  
+.menu-icon span::before{
+    top: 16px;
+}
+
+.menu-icon span::after{
+    top: 34px;
+}
+.menu-icon span::after,
+.menu-icon span::before{
+    content: '';
+    position:absolute;
+    width: 50px;
+    height: 6px;
+    background:gray;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition:0.5s;
+}
+
+.open span {
+    top: 0;
+    transform:rotate(125deg);
+}  
+.open span::before {
+  display: none;;
+}
+
+.open span::after {
+  top: 0;
+  transform:rotate(110deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open .menu {
+    display: block;
+}
+.menu {
+    display: none;
+}
+
+.open {
+    display: flex;
+    left: 0%;
+    height: 100%;
+    width: 20%;
+    background: transparent;
+}
+
+p:hover {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    top: 50px;
+}

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: rgb(23, 24, 23);
+}
+
+.navbar {
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.navbar a {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.header-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 20, 60, .5);
+}
+
+.page-header {
+    background-image: url("backroundassign7.jpg");
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgba(68, 122, 76, .7);
+}
+
+.page-header h1{
+    font-size: 4em;
+}
+
+.page-header h3{
+    font-size: 2.5em;
+}
+
+#headerText {
+    font-family: 'Courier New', Courier, monospace;
+    height: max-content;
+    text-align: right;
+    color: lightgray;
+}
+
+.center-flex {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.myform {
+    background-image: url("backroundassign7.jpg");
+    padding: 2%;
+    color: #DDDDDD;
+    background-color: rgb(90,90, 80);
+}
+
+.main-content {
+    background-image: url("backroundassign7.jpg");
+    padding: 2%;
+    color: #DDDDDD;
+    background-color: rgb(90,90, 80);
+}
+
+input {
+    width: 175px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin: 1% 0 4% 0;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 1% 0 4% 0;
+    border-radius: 5px;
+}
+
+#clear {
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 1% 0 4% 0;
+    border-radius: 5px;
+}
+
+form {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+#payment{
+    background-color: rgb(253, 250, 250);
+    color: mediumaquamarine;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+
+#footer-address{
+    flex: 40%;
+    padding-left: 40%;
+    padding-right: 40%;
+}

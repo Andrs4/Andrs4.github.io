@@ -27,23 +27,17 @@
      * The current working directory has been stored in $cwd.
      * To get the size of an array in php use the sizeof function:  $len = sizeof($files);
      *****************************************************************/
-     $len = sizeof($files);
-     for ($index = 0; $index < $len; $index++) {
-        $directory[$index] = new fileN();
-        $directory[$index]-> $fileName;
-        $directory[$index]->$fileType;
-        $directory[$index]->$cwd;<
-     }
-     foreach ($files as $key => $value) {
-      $file = new fileN();
-      $file->fileName = $value;
-      $file->fileType = fileType($value);
-      $file->cwd = $cwd;
-      array_push($directory, $file);
-}
-
-
      
+     foreach ($files as $key => $value) {
+            $file = new fileN();
+            $file->fileName = $value;
+            $file->fileType = fileType($value);
+            $file->cwd = $cwd;
+            array_push($directory, $file);
+     }
+     
+
+    //  $len = sizeof($files);
      
      /*******************End of your Code *******************************************/
 
@@ -51,5 +45,3 @@
      $str = json_encode($directory);
      print "\n $str \n";   //output the json string - The string is sent to the browser.      
  ?>
-
-3
