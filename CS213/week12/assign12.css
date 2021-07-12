@@ -1,0 +1,25 @@
+.card_transparent {
+    background-color: rgb(0, 0, 255, 0.2);
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 20px auto;
+    border:  3px solid lightgray;
+    box-shadow: 2px 10px 5px 0px;
+}
+.card_transparent h1{
+    grid-column: 1 / 3;
+    text-align: center;
+    color: blue;
+}
+label {
+    grid-column: 1 / 2;
+}
+input {
+    grid-column: 2 / 3;
+}
+button {
+    grid-column: 1/ 3;
+    width: fit-content;   
+}

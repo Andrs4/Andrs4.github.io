@@ -1,1 +1,29 @@
-This will be assignment #12
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileage Calculator</title>
+    <link rel="stylesheet" href="assign12.css">
+</head>
+<body>
+    <div class="card_transparent">
+        <h1>Mileage Calculator</h1>
+        <label for=""> Start City</label>
+        <input type="text" id="startCity" name="startCity">
+        <label for=""> Start State</label>
+        <input type="text" id="startState" name="startState">
+        <label style="text-align: center; font-size: 2rem;">To</label>
+        <label for=""> End City</label>
+        <input type="text" id="endCity" name="endCity">
+        <label for=""> End State</label>
+        <input type="text" id="endState" name="endState">
+        <button type="button" onclick="makeRequest()"> Calculate</button>
+    </div>
+    <div class="card_transparent">
+        <span id="contentDiv"></span>
+    </div>
+    <script src="assign12.js"></script>
+</body>
+</html>

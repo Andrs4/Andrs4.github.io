@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileage Calculator using AJAX and JSON</title>
+    <link rel="stylesheet" type="text/css" href="assign12.css">
+</head>
+<body>
+    <div id="content">
+      <h1>Mileage Calculator using AJAX and JSON</h1>
+      <label for="startCity">Start City: </label>
+      <input type="text" name="startCity" id="startCity" required><br>
+      <label for="startState">Start State: </label>
+      <input type="text" name="startState" id="startState" size="2" maxlength="2" required><br>
+      <label for="endCity">Destination City:</label>
+      <input type="text" name="endCity" id="endCity" required><br>
+      <label for="endCity">Destination State:</label>
+      <input type="text" name="endState" id="endState" required><br><br><br>
+      <button type="button" onclick="loadRequest()">Calculate</button><br><br>
+      <div id="contentDiv"></div>
+    </div>
+
+    <script>
+        function loadRequest() {
+            let start_city = document.getElementById('startCity').value;
+            let start_state = document.getElementById('startState').value;
+            let end_city = document.getElementById('endCity').value;
+            let end_state = document.getElementById('endState').value;
+            var url = "/cgi-bin/cs213/mileageAjaxJSON?startCity=" + start_city + "&startState=" + start_state + "&endCity=" + end_city + "&endState=" + end_state;
+           
+            if ((start_city != "") && (start_state != "") && (end_city != "") && (end_state != "")) {
+                var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var data = JSON.parse(this.responseText);
+                    //console.table(data);
+                    document.getElementById("contentDiv").innerHTML = `The distance between ${start_city} and ${end_city} is ${data.trip.miles} miles.`;
+        
+                    }
+                else if (this.status == 404){
+                    let errorMessage = "This file does not exist.";
+                    errorMessage = errorMessage.fontcolor("red");
+                    document.getElementById("contentDiv").innerHTML = errorMessage; 
+                }
+            }
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            }
+
+            else {
+                let errorMessage2 = "Please complete the form."
+                document.getElementById("contentDiv").innerHTML = errorMessage2.fontcolor("red");
+            }
+            };
+    </script>
+</body>
+</html>
