@@ -1,1 +1,72 @@
-This will be assignment #13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Piano Students</title>
+    <link rel="stylesheet" href="assign13.css">
+</head>
+<body>
+    <!-- Form validation on the client -->
+    <!-- Each time the register button is pressed, 
+    the form information must be displayed in 
+    a display portion of the same web page 
+    without reloading the page. The data in 
+    the display area must also be written to 
+    a file on disk in the data directory using 
+    a PHP program. -->
+    <div>
+        <form action="">
+            <fieldset>
+                <label for="">First Name
+                    <input type="text" name="first_name" id="first_name">
+                </label>
+                
+                <label for="">Last Name
+                    <input type="text" name="last_name" id="last_name">
+                </label>
+                
+                <label for="">
+                    <input type="text" name="student_id" id="student_id">
+                </label>
+            </fieldset>
+            <fieldset class="duet">
+                <label for="">First Name
+                    <input type="text" name="first_name_2" id="first_name_2">
+                </label>
+                
+                <label for="">Last Name
+                    <input type="text" name="last_name_2" id="last_name_2">
+                </label>
+                
+                <label for="">
+                    <input type="text" name="student_id_2" id="student_id_2">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="">Skill
+                    <input type="text" name="skill" id="skill">
+                </label>
+                <label for="">instrument
+                    <input type="text" name="instrument" id ="instrument">
+                </label>
+                <label for="">Location
+                    <input type="text" name="location" id="location">
+                </label>
+                <label for="">Room
+                    <input type="text" name="room" id="room">
+                </label>
+                <label for="">Time Slot
+                    <input type="text" name="time_slot" id="time_slot">
+                </label>
+            </fieldset>
+            <input type="button" name="register" id="register" value="Register">
+            <input type="reset" name="clear" id="clear" value="Clear">
+            <div class="students_registered">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
