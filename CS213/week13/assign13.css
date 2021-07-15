@@ -1,0 +1,52 @@
+form {
+    max-width: fit-content;
+    min-width: 250px;
+    margin: 0 auto;
+    align-content: center;
+}
+fieldset {
+    background-color: rgba(30, 235, 242, 0.2);
+    border-radius: 10px ;
+    margin-top: 10px;
+
+}
+
+div {
+    margin: 10px;
+}
+form label{
+    display: block;
+    margin-top: 8px;
+    margin-left: 2%;
+}
+form label.sbs {
+    margin-top: 3px;
+}
+form label.sbs input{
+    margin: 5px;
+}
+form label.top input {
+    display: block;
+    margin-left: 5%;
+}
+/* input {
+    display: block;
+    margin-left: 5%;
+
+} */
+.buttons {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    max-width: fit-content;
+    border-radius: 0.5em;
+    margin-bottom: 5px;
+}
+.error {
+    visibility: hidden;
+    color : red;
+    margin-left: 5%;
+}
+
+#duet {
+    display: none;
+}

@@ -18,55 +18,79 @@
     a PHP program. -->
     <div>
         <form action="">
+            <h1>Register Piano Students</h1>
             <fieldset>
-                <label for="">First Name
-                    <input type="text" name="first_name" id="first_name">
+                <label class="top">First Name
+                    <input type="text" name="first_name" id="first_name" autofocus required>
+                    <span class="error" id="first_name_error"></span>
                 </label>
                 
-                <label for="">Last Name
-                    <input type="text" name="last_name" id="last_name">
+                <label class="top">Last Name
+                    <input type="text" name="last_name" id="last_name" required>
+                    <span class="error" id="last_name_error"></span>
                 </label>
                 
-                <label for="">
-                    <input type="text" name="student_id" id="student_id">
+                <label class="top">Student ID
+                    <input type="number" name="student_id" id="student_id" required>
+                    <span class="error" id="student_id_error"></span>
                 </label>
             </fieldset>
-            <fieldset class="duet">
-                <label for="">First Name
-                    <input type="text" name="first_name_2" id="first_name_2">
+            <div>
+                <p id="if_duet"> Click the button if you're a duet.</p>
+                <input type="button" name ="show_duet" id="show_duet" value="Duet" onclick="showDuet()">
+            </div>
+            <fieldset id="duet">
+                <label class="top">First Name
+                    <input type="text" name="first_name_2" id="first_name_2" autofocus required>
+                    <span class="error" id="first_name_2_error"></span>
                 </label>
                 
-                <label for="">Last Name
-                    <input type="text" name="last_name_2" id="last_name_2">
+                <label class="top">Last Name
+                    <input type="text" name="last_name_2" id="last_name_2" required>
+                    <span class="error" id="last_name_2_error"></span>
                 </label>
                 
-                <label for="">
-                    <input type="text" name="student_id_2" id="student_id_2">
+                <label class="top">Student ID
+                    <input type="number" name="student_id_2" id="student_id_2" required>
+                    <span class="error" id="student_id_2_error"></span>
                 </label>
             </fieldset>
             <fieldset>
-                <label for="">Skill
-                    <input type="text" name="skill" id="skill">
+                <label for="" name="skill">Skill
+                    <label class="sbs"><input type="radio" name="skill" id="begginer">Begginer</label>
+                    <label class="sbs"><input type="radio" name="skill" id="intermediate">Intermediate</label>
+                    <label class="sbs"><input type="radio" name="skill" id="pre-advanced">Pre-advanced</label>
+                    <label class="sbs"><input type="radio" name="skill" id="advanced">Advanced</label>
+                    <span class="error" id="skill_error"></span>
                 </label>
-                <label for="">instrument
-                    <input type="text" name="instrument" id ="instrument">
+                <label for="">Instrument
+                    <label class="sbs"><input type="checkbox" name="instrument" id="piano">Piano</label>
+                    <label class="sbs"><input type="checkbox" name="instrument" id="voice">Voice</label>
+                    <label class="sbs"><input type="checkbox" name="instrument" id="string">String</label>
+                    <label class="sbs"><input type="checkbox" name="instrument" id="organ">Organ</label>
+                    <label class="sbs">Other<input type="text" name="instrument" id="other"></label>
+                    <span class="error" id="instrument_error"></span>
                 </label>
-                <label for="">Location
+                <label class="top">Location
                     <input type="text" name="location" id="location">
+                    <span class="error" id="location_error"></span>
                 </label>
-                <label for="">Room
-                    <input type="text" name="room" id="room">
+                <label class="top">Room
+                    <input type="number" name="room" id="room">
+                    <span class="error" id="room_error"></span>
                 </label>
-                <label for="">Time Slot
-                    <input type="text" name="time_slot" id="time_slot">
+                <label class="top">Time Slot
+                    <input type="time" name="time_slot" id="time_slot">
+                    <span class="error" id="time_slot_error"></span>
                 </label>
             </fieldset>
-            <input type="button" name="register" id="register" value="Register">
+            <input type="button" name="register" id="register" value="Register" onclick="validateForm()">
             <input type="reset" name="clear" id="clear" value="Clear">
             <div class="students_registered">
                 
             </div>
         </form>
     </div>
+    <script src="assign13.js"></script>
 </body>
 </html>
