@@ -256,39 +256,80 @@ h1, h2, h3 {
         padding-top: $left-padding;
         border-top: 2px solid;
         display: grid;
-        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-columns: 1fr 15fr 1fr;
     
         max-width: 100%;
     }
-    
-    .explanation::before {
-        content: url("images/image1.JPG");
-        content: url("images/image8.jpg");
-        opacity: $images-opacity;
+    /*.explanation::before {
+      width: 100%;
+      height: 500px;
+      content: url("images/image1.JPG");
+      opacity: $images-opacity;
+      animation: separating-circle 2s infinite;
+    }
+    .explanation::after {
+      content: url("images/image9.jpg");
+      opacity: $images-opacity;
+      animation: separating-circle-2 2s infinite;
+    }*/
+    @mixin each_article {
+      grid-column: 1 / 4;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      background-size: 100%;
+      color: black;
+    }
+    @mixin article_childs {
+      grid-column: 6 / 11;
+      z-index: 3;
+    }
+    @mixin article_before_pseu($images) {
+      content: url($images);
+      grid-column: 1 / 6;
+      grid-row: 1 / 6;
+      margin: auto;
+      animation: mymove 15s infinite;
     }
     .explanation {
-        grid-column: 1 / 4;
+      @include each_article();
+    }
+    .explanation h3,
+    .explanation p {
+      grid-column: 6 / 11;
+      z-index: 3;
+    }
+    .explanation::before {
+      content: url("images/image1.jpg");
+      grid-column: 1 / 6;
+      grid-row: 1 / 6;
+      margin: auto;
+      animation: mymove 15s infinite;
+    }
+    .explanation:hover {
+      background-image: url("images/image1.jpg");
+      background-color: black;
+      color: white;
     }
     .participation::before {
         content: url("images/image2.JPG");
         opacity: $images-opacity;
     }
     .participation {
-        grid-column: 1 / 4;
+        @include each_article();
     }
     .benefits::before {
         content: url("images/image3.JPG");
         opacity: $images-opacity;
     }
     .benefits {
-        grid-column: 1 / 4;
+        @include each_article();
     }
     .requirements::before {
         content: url("images/image5.JPG");
         opacity: $images-opacity;
     }
     .requirements {
-        grid-column: 1 / 4;
+        @include each_article();
     }
     
     footer {
@@ -316,4 +357,53 @@ h1, h2, h3 {
     button{
         display: none;
     }
+}
+
+/*animations*/
+@keyframes separating-circle {
+  0% {
+      transform: translate(0%, 0);
+  }
+  50% {
+      transform: translate(-50%, 0);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+@keyframes separating-circle-2 {
+  0% {
+      transform: translate(0%, 0);
+  }
+  50% {
+      transform: translate(50%, 0);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes mymove {
+  0% {
+    transform: translate(0, 0);
+    transition-delay: 15s;    
+  }
+  50%{
+    transform: translate(50%, 0);    
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes index_mov {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 3;
+  }
 }

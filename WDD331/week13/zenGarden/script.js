@@ -11,11 +11,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
-var tag = document.createElement("p");
+/* var tag = document.createElement("p");
 var new_image = document.createElement("img")
 new_image.src='images/image1.JPG'
 var text = document.createTextNode("Tutorix is the best e-learning platform");
 tag.appendChild(text);
 var element = document.getElementById("zen-explanation");
 element.appendChild(tag);
-element.appendChild(new_image)
+element.appendChild(new_image)*/
