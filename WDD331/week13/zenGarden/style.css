@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+/*--images--*/
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 /*All code above is from imported files, below is added scss code.*/
 body {
   font-family: "Inconsolata", monospace;
@@ -9,7 +10,15 @@ h1, h2, h3 {
   font-family: "Berkshire Swash", cursive;
 }
 
-/*--images--*/
+a {
+  text-decoration-line: none;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
 @media (max-width: 60em) {
   .intro {
     display: flex;
@@ -254,7 +263,6 @@ h1, h2, h3 {
 .preamble,
 .main {
     margin-left: 17.5rem;
-    padding-left: 0.5rem;
     background-color: white;
     padding-top: 0.5rem;
     text-align: center;
@@ -277,19 +285,11 @@ h1, h2, h3 {
     max-width: 100%;
   }
 
-  /*.explanation::before {
-    width: 100%;
-    height: 500px;
-    content: url("images/image1.JPG");
-    opacity: $images-opacity;
-    animation: separating-circle 2s infinite;
-  }
-  .explanation::after {
-    content: url("images/image9.jpg");
-    opacity: $images-opacity;
-    animation: separating-circle-2 2s infinite;
-  }*/
-  .explanation {
+  /*mixins that will be applied on main articles*/
+  .explanation,
+.participation,
+.benefits,
+.requirements {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -298,7 +298,13 @@ h1, h2, h3 {
   }
 
   .explanation h3,
-.explanation p {
+.explanation p,
+.participation h3,
+.participation p,
+.benefits h3,
+.benefits p,
+.requirements h3,
+.requirements p {
     grid-column: 6/11;
     z-index: 3;
   }
@@ -312,48 +318,51 @@ h1, h2, h3 {
   }
 
   .explanation:hover {
-    background-image: url("images/image1.jpg");
+    background-image: url(image1);
     background-color: black;
     color: white;
   }
 
   .participation::before {
-    content: url("images/image2.JPG");
-    opacity: 0.5;
+    content: url("images/image2.jpg");
+    grid-column: 1/6;
+    grid-row: 1/6;
+    margin: auto;
+    animation: mymove 15s infinite;
   }
 
-  .participation {
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    background-size: 100%;
-    color: black;
+  .participation:hover {
+    background-image: url("images/image2.jpg");
+    background-color: black;
+    color: white;
   }
 
   .benefits::before {
-    content: url("images/image3.JPG");
-    opacity: 0.5;
+    content: url("images/image5.jpg");
+    grid-column: 1/6;
+    grid-row: 1/6;
+    margin: auto;
+    animation: mymove 15s infinite;
   }
 
-  .benefits {
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    background-size: 100%;
-    color: black;
+  .benefits:hover {
+    background-image: url("images/image5.jpg");
+    background-color: black;
+    color: white;
   }
 
   .requirements::before {
-    content: url("images/image5.JPG");
-    opacity: 0.5;
+    content: url("images/image4.jpg");
+    grid-column: 1/6;
+    grid-row: 1/6;
+    margin: auto;
+    animation: mymove 15s infinite;
   }
 
-  .requirements {
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    background-size: 100%;
-    color: black;
+  .requirements:hover {
+    background-image: url("images/image4.jpg");
+    background-color: black;
+    color: white;
   }
 
   footer {
@@ -370,7 +379,6 @@ h1, h2, h3 {
 
   ul li a {
     display: block;
-    text-decoration-line: none;
     color: white;
   }
 
@@ -386,28 +394,6 @@ button {
   }
 }
 /*animations*/
-@keyframes separating-circle {
-  0% {
-    transform: translate(0%, 0);
-  }
-  50% {
-    transform: translate(-50%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes separating-circle-2 {
-  0% {
-    transform: translate(0%, 0);
-  }
-  50% {
-    transform: translate(50%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 @keyframes mymove {
   0% {
     transform: translate(0, 0);
@@ -418,17 +404,6 @@ button {
   }
   100% {
     transform: translate(0, 0);
-  }
-}
-@keyframes index_mov {
-  0% {
-    z-index: 1;
-  }
-  50% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 3;
   }
 }
 

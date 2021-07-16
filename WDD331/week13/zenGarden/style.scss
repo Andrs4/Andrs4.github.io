@@ -4,195 +4,205 @@ $color3:#202020;
 $color4:#e0e0e0;
 $color5:#808080;
 $gradient-color: linear-gradient(to right top, #292a2c, #4c5052, #737a7a, #9fa6a2, #d1d3cc);
+/*--images--*/
+$image1: "images/image1.jpg";
+$image2: "images/image2.jpg";
+$image3: "images/image3.jpg";
+$image4: "images/image4.jpg";
+$image5: "images/image5.jpg";
+$image6: "images/image6.jpg";
+$image7: "images/image7.jpg";
+$image8: "images/image8.jpg";
+$image9: "images/image9.jpg";
 
 $family-principal:unquote("Berkshire+Swash&display=swap");
 $family-secondary: unquote("Inconsolata&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=#{$family-principal}');
 @import url('https://fonts.googleapis.com/css2?family=#{$family-secondary}');
+@import url('https://fonts.googleapis.com/css2?family=#{$family-principal}');
 
 $font-principal:'Berkshire Swash', cursive;
 $font-secondary:'Inconsolata', monospace;
 
 /*All code above is from imported files, below is added scss code.*/
-
-
 $font-h1-size: 4em;
 $font-h2-size: 1em;
 
 body {
     font-family: $font-secondary;
-
 }
 
 h1, h2, h3 {
     font-family: $font-principal;
 }
-/*--images--*/
 
+a {
+  text-decoration-line: none ;
+}
+a:hover {
+  background: black;
+  color: white;
+}
 @media (max-width:60em){
-    .intro {
-        display: flex;
-        flex-flow: column;
-    }
-    .intro header {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        //background-image: url('../images/image1.jpeg');
+  .intro {
+    display: flex;
+    flex-flow: column;
+  }
+  .intro header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    //background-image: url('../images/image1.jpeg');
+    text-align: center;
+  }
 
-        text-align: center;
-
-    }
-    .intro header h1 {
-        color: $color4;
-        background-color: $color1;
-        padding-top: 15%;
-        padding-bottom: 15%;
-        font-size: $font-h1-size;
-        margin-top: 0;
-        margin-bottom: 0;
-
-    }
-    .intro header h2 {
-       border: solid black 2px;
-       padding: .3em;
-       width: 50%;
-       align-self: center;
-       font-size: $font-h2-size;
-       font-family: $font-secondary;
-       font-weight: bolder;
-    }
-
-    .intro .summary {
-       padding: 2%;
-    }
-
-    .intro .preamble {
-      display: flex;
-      flex-flow: column;
-      background-color: $color2;
+  .intro header h1 {
       color: $color4;
-      padding-left: 4%
-    }
-    .intro .preamble h3 {
-      letter-spacing: .2em;
-    }
-    .intro .preamble p {
+      background-color: $color1;
+      padding-top: 15%;
+      padding-bottom: 15%;
+      font-size: $font-h1-size;
       margin-top: 0;
-    }
+      margin-bottom: 0;
+  }
+  .intro header h2 {
+     border: solid black 2px;
+     padding: .3em;
+     width: 50%;
+     align-self: center;
+     font-size: $font-h2-size;
+     font-family: $font-secondary;
+     font-weight: bolder;
+  }
+  .intro .summary {
+     padding: 2%;
+  }
 
-    .main {
+  .intro .preamble {
+    display: flex;
+    flex-flow: column;
+    background-color: $color2;
+    color: $color4;
+    padding-left: 4%
+  }
+  .intro .preamble h3 {
+    letter-spacing: .2em;
+  }
+  .intro .preamble p {
+    margin-top: 0;
+  }
+
+  .main {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .main .explanation {
       display: flex;
-      flex-flow: column;
-    }
+    flex-flow: column;
+    text-align: right;
+    background-color: $color4;
+    color: $color1;
+    padding-right: 4%;
+    margin-top: 2em;
+  }
+  .main .explanation h3 {letter-spacing: .2em;}
+  .main .explanation p {margin-top: 0;}
 
-    .main .explanation {
-        display: flex;
-      flex-flow: column;
-      text-align: right;
-      background-color: $color4;
-      color: $color1;
-      padding-right: 4%;
-      margin-top: 2em;
-    }
-    .main .explanation h3 {letter-spacing: .2em;}
-    .main .explanation p {margin-top: 0;}
+  .main .participation {
+      display: flex;
+    flex-flow: column;
+    text-align: left;
+    background-color: $color5;
+    color: $color1;
+    padding-left: 4%;
+    margin-top: 2em;
+  }
+  .main .participation h3 {letter-spacing: .2em;}
+  .main .participation p {margin-top: 0;}
 
-    .main .participation {
-        display: flex;
-      flex-flow: column;
-      text-align: left;
-      background-color: $color5;
-      color: $color1;
-      padding-left: 4%;
-      margin-top: 2em;
-    }
-    .main .participation h3 {letter-spacing: .2em;}
-    .main .participation p {margin-top: 0;}
+  .main .benefits {
+      display: flex;
+    flex-flow: column;
+    text-align: right;
+    background-color: $color2;
+    color: $color4;
+    padding-right: 4%;
+    margin-top: 2em;
+  }
+  .main .benefits h3 {letter-spacing: .2em;}
+  .main .benefits p {margin-top: 0;}
 
-    .main .benefits {
-        display: flex;
-      flex-flow: column;
-      text-align: right;
-      background-color: $color2;
-      color: $color4;
-      padding-right: 4%;
-      margin-top: 2em;
-    }
-    .main .benefits h3 {letter-spacing: .2em;}
-    .main .benefits p {margin-top: 0;}
+  .main .requirements {
+      display: flex;
+    flex-flow: column;
+    text-align: left;
+    background-color: $color4;
+    color: $color1;
+    padding-left: 4%;
+    margin-top: 2em;
+  }
+  .main .requirements h3 {letter-spacing: .2em;}
+  .main .requirements p {margin-top: 0;}
 
-    .main .requirements {
-        display: flex;
-      flex-flow: column;
-      text-align: left;
-      background-color: $color4;
-      color: $color1;
-      padding-left: 4%;
-      margin-top: 2em;
-    }
-    .main .requirements h3 {letter-spacing: .2em;}
-    .main .requirements p {margin-top: 0;}
+  //sidebar
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
 
-    //sidebar
-    /* The side navigation menu */
-    .sidenav {
-      height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Stay on top */
-      top: 0;
-      left: 0;
-      background-color: #111; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
-      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    }
+  /* The navigation menu links */
 
-    /* The navigation menu links */
+  .title-menu{
+    font-family:$family-principal;
+    color:$color4;
+  }
 
-    .title-menu{
-      font-family:$family-principal;
-      color:$color4;
-    }
+  li{
+    list-style-type:none;
+  }
 
-    li{
-      list-style-type:none;
-    }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
 
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
 
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-      transition: margin-left .5s;
-      padding: 20px;
-    }
-
-    .button{
-      margin-top:2em;
-    }
+  .button{
+    margin-top:2em;
+  }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -200,188 +210,156 @@ h1, h2, h3 {
   .sidenav a {font-size: 18px;}
 }
 @media (min-width: 60em) {
-    $height-title : 15rem;
-    $padding-top: 5rem;
-    $sidebar-width: 17rem;
-    $left-padding: 0.5rem;
-    $images-opacity: 0.5;
-    * {
-        margin: 0;
-    }
-    body {
-        background-color: #404040;
-    }
-    header h1 {
-        font-size: 3rem;
-        background-color: black;
-        color: white;
-        height: $height-title;
-        text-align: center;
-        float: inherit;
-        padding-top: $padding-top;
-    }
-    header h1::before {
-        content: url("images/logo2.png");
-    }
-    
-    .sidebar {
-        background-color: #404040;
-        color: white;
-        position: absolute;
-        left: 0%;
-        top : $height-title + $padding-top;
-        width: $sidebar-width;
-        text-align: left;
-        margin: $left-padding 0 0 $left-padding;
-    }
-    header h2,
-    .summary,
-    .preamble,
-    .main {
-        margin-left: $sidebar-width + $left-padding;
-        padding-left: $left-padding;
-        background-color: white;
-        padding-top: $left-padding;
-        text-align: center;
-    }
-    
-    header h2 {
-        font-size: 2rem;
-        text-shadow: 2px 2px #404040;
-    }
-    .intro .preamble {
-        padding-bottom: $left-padding* 2;
-    }
-    .main {
-        padding-top: $left-padding;
-        border-top: 2px solid;
-        display: grid;
-        grid-template-columns: 1fr 15fr 1fr;
-    
-        max-width: 100%;
-    }
-    /*.explanation::before {
-      width: 100%;
-      height: 500px;
-      content: url("images/image1.JPG");
-      opacity: $images-opacity;
-      animation: separating-circle 2s infinite;
-    }
-    .explanation::after {
-      content: url("images/image9.jpg");
-      opacity: $images-opacity;
-      animation: separating-circle-2 2s infinite;
-    }*/
-    @mixin each_article {
-      grid-column: 1 / 4;
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      background-size: 100%;
-      color: black;
-    }
-    @mixin article_childs {
-      grid-column: 6 / 11;
-      z-index: 3;
-    }
-    @mixin article_before_pseu($images) {
-      content: url($images);
-      grid-column: 1 / 6;
-      grid-row: 1 / 6;
-      margin: auto;
-      animation: mymove 15s infinite;
-    }
-    .explanation {
-      @include each_article();
-    }
-    .explanation h3,
-    .explanation p {
-      grid-column: 6 / 11;
-      z-index: 3;
-    }
-    .explanation::before {
-      content: url("images/image1.jpg");
-      grid-column: 1 / 6;
-      grid-row: 1 / 6;
-      margin: auto;
-      animation: mymove 15s infinite;
-    }
-    .explanation:hover {
-      background-image: url("images/image1.jpg");
+  $height-title : 15rem;
+  $padding-top: 5rem;
+  $sidebar-width: 17rem;
+  $left-padding: 0.5rem;
+  $images-opacity: 0.5;
+  * {
+      margin: 0;
+  }
+  body {
+      background-color: #404040;
+  }
+  header h1 {
+      font-size: 3rem;
       background-color: black;
       color: white;
-    }
-    .participation::before {
-        content: url("images/image2.JPG");
-        opacity: $images-opacity;
-    }
-    .participation {
-        @include each_article();
-    }
-    .benefits::before {
-        content: url("images/image3.JPG");
-        opacity: $images-opacity;
-    }
-    .benefits {
-        @include each_article();
-    }
-    .requirements::before {
-        content: url("images/image5.JPG");
-        opacity: $images-opacity;
-    }
-    .requirements {
-        @include each_article();
-    }
-    
-    footer {
-        grid-column: 1 / 4;
-        position: relative;
-        bottom: 0;
-        background-color: black;
-    }
-    p{
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-    }
-    
-    ul li a{
-        display: block;
-        text-decoration-line: none;
-        color:white;
-    }
-    ul li {
-        list-style: none;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
-    }
-    .closebtn,
-    button{
-        display: none;
-    }
+      height: $height-title;
+      text-align: center;
+      float: inherit;
+      padding-top: $padding-top;
+  }
+  header h1::before {
+      content: url("images/logo2.png");
+  }
+  
+  .sidebar {
+      background-color: #404040;
+      color: white;
+      position: absolute;
+      left: 0%;
+      top : $height-title + $padding-top;
+      width: $sidebar-width;
+      text-align: left;
+      margin: $left-padding 0 0 $left-padding;
+  }
+  header h2,
+  .summary,
+  .preamble,
+  .main {
+      margin-left: $sidebar-width + $left-padding;
+      background-color: white;
+      padding-top: $left-padding;
+      text-align: center;
+  }
+  
+  header h2 {
+      font-size: 2rem;
+      text-shadow: 2px 2px #404040;
+  }
+  .intro .preamble {
+      padding-bottom: $left-padding* 2;
+  }
+  .main {
+      padding-top: $left-padding;
+      border-top: 2px solid;
+      display: grid;
+      grid-template-columns: 1fr 15fr 1fr;
+  
+      max-width: 100%;
+  }
+  /*mixins that will be applied on main articles*/
+  @mixin each_article {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-size: 100%;
+    color: black;
+  }
+  @mixin article_childs {
+    grid-column: 6 / 11;
+    z-index: 3;
+  }
+  @mixin article_before_pseu($images) {
+    content: url($images);
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+    margin: auto;
+    animation: mymove 15s infinite;
+  }
+  @mixin article_hover($images){
+    background-image: url($images);
+    background-color: black;
+    color: white;
+  }
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements {
+    @include each_article();
+  }
+  .explanation h3,
+  .explanation p,
+  .participation h3,
+  .participation p,
+  .benefits h3,
+  .benefits p,
+  .requirements h3,
+  .requirements p {
+    @include article_childs();
+  }
+  .explanation::before {
+    @include article_before_pseu($image1)
+  }
+  .explanation:hover {
+    @include article_hover(image1)
+  }
+  .participation::before {
+    @include article_before_pseu($image2)
+  }
+  .participation:hover {
+    @include article_hover($image2);
+  }
+  .benefits::before {
+    @include article_before_pseu($image5);
+  }
+  .benefits:hover {
+    @include article_hover($image5)
+  }
+  .requirements::before{
+    @include article_before_pseu($image4);
+  }
+  .requirements:hover {
+    @include article_hover($image4);
+  }
+  
+  footer {
+      grid-column: 1 / 4;
+      position: relative;
+      bottom: 0;
+      background-color: black;
+  }
+  p{
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+  }
+  ul li a{
+      display: block;
+      color:white;
+  }
+  ul li {
+      list-style: none;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+  }
+  .closebtn,
+  button{
+      display: none;
+  }
 }
 
 /*animations*/
-@keyframes separating-circle {
-  0% {
-      transform: translate(0%, 0);
-  }
-  50% {
-      transform: translate(-50%, 0);
-  }
-  100% {
-      transform: translate(0, 0);
-  }
-}
-@keyframes separating-circle-2 {
-  0% {
-      transform: translate(0%, 0);
-  }
-  50% {
-      transform: translate(50%, 0);
-  }
-  100% {
-      transform: translate(0, 0);
-  }
-}
 
 @keyframes mymove {
   0% {
@@ -396,14 +374,3 @@ h1, h2, h3 {
   }
 }
 
-@keyframes index_mov {
-  0% {
-    z-index: 1;
-  }
-  50% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 3;
-  }
-}
