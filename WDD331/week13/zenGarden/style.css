@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+/*All code above is from imported files, below is added scss code.*/
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+h1, h2, h3 {
+  font-family: "Berkshire Swash", cursive;
+}
+
+/*--images--*/
+@media (max-width: 60em) {
+  .intro {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .intro header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro header h1 {
+    color: #e0e0e0;
+    background-color: #000;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .intro header h2 {
+    border: solid black 2px;
+    padding: 0.3em;
+    width: 50%;
+    align-self: center;
+    font-size: 1em;
+    font-family: "Inconsolata", monospace;
+    font-weight: bolder;
+  }
+
+  .intro .summary {
+    padding: 2%;
+  }
+
+  .intro .preamble {
+    display: flex;
+    flex-flow: column;
+    background-color: #404040;
+    color: #e0e0e0;
+    padding-left: 4%;
+  }
+
+  .intro .preamble h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .intro .preamble p {
+    margin-top: 0;
+  }
+
+  .main {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .main .explanation {
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+    background-color: #e0e0e0;
+    color: #000;
+    padding-right: 4%;
+    margin-top: 2em;
+  }
+
+  .main .explanation h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .main .explanation p {
+    margin-top: 0;
+  }
+
+  .main .participation {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    background-color: #808080;
+    color: #000;
+    padding-left: 4%;
+    margin-top: 2em;
+  }
+
+  .main .participation h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .main .participation p {
+    margin-top: 0;
+  }
+
+  .main .benefits {
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+    background-color: #404040;
+    color: #e0e0e0;
+    padding-right: 4%;
+    margin-top: 2em;
+  }
+
+  .main .benefits h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .main .benefits p {
+    margin-top: 0;
+  }
+
+  .main .requirements {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    background-color: #e0e0e0;
+    color: #000;
+    padding-left: 4%;
+    margin-top: 2em;
+  }
+
+  .main .requirements h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .main .requirements p {
+    margin-top: 0;
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .title-menu {
+    font-family: Berkshire+Swash&display=swap;
+    color: #e0e0e0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
+
+  .button {
+    margin-top: 2em;
+  }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 60em) {
+  * {
+    margin: 0;
+  }
+
+  body {
+    background-color: #404040;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    height: 15rem;
+    text-align: center;
+    float: inherit;
+    padding-top: 5rem;
+  }
+
+  header h1::before {
+    content: url("images/logo2.png");
+  }
+
+  .sidebar {
+    background-color: #404040;
+    color: white;
+    position: absolute;
+    left: 0%;
+    top: 20rem;
+    width: 17rem;
+    text-align: left;
+    margin: 0.5rem 0 0 0.5rem;
+  }
+
+  header h2,
+.summary,
+.preamble,
+.main {
+    margin-left: 17.5rem;
+    padding-left: 0.5rem;
+    background-color: white;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px #404040;
+  }
+
+  .intro .preamble {
+    padding-bottom: 1rem;
+  }
+
+  .main {
+    padding-top: 0.5rem;
+    border-top: 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    max-width: 100%;
+  }
+
+  .explanation::before {
+    content: url("images/image1.JPG");
+    content: url("images/image8.jpg");
+    opacity: 0.5;
+  }
+
+  .explanation {
+    grid-column: 1/4;
+  }
+
+  .participation::before {
+    content: url("images/image2.JPG");
+    opacity: 0.5;
+  }
+
+  .participation {
+    grid-column: 1/4;
+  }
+
+  .benefits::before {
+    content: url("images/image3.JPG");
+    opacity: 0.5;
+  }
+
+  .benefits {
+    grid-column: 1/4;
+  }
+
+  .requirements::before {
+    content: url("images/image5.JPG");
+    opacity: 0.5;
+  }
+
+  .requirements {
+    grid-column: 1/4;
+  }
+
+  footer {
+    grid-column: 1/4;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+  }
+
+  p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  ul li a {
+    display: block;
+    text-decoration-line: none;
+    color: white;
+  }
+
+  ul li {
+    list-style: none;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  }
+
+  .closebtn,
+button {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
