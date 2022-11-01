@@ -9,9 +9,9 @@
             "phone"     : "66 - 48626",
             "email"    : "oportunidades@cba.org.bo",
             "webpage"  : "https://www.cba.org.bo/site/",
-            "image"     : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/cba_tarija.png"
+            "image"     : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/cba_tarija.png"
         },
-            
+        
         {
             "name"     : "PIL",
             "fullname" : "PIL Tarija",
@@ -21,7 +21,7 @@
             "phone"    : "46638736 - 72965513",
             "email"   : "",
             "webpage" : "https://piltarija.com/",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/logopil2.png"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/logopil2.png"
         },
          
         {
@@ -33,7 +33,7 @@
             "phone"    : "71864522",
             "email"   : "municipio@tarija.bo",
             "webpage" : "https://inicio.tarija.bo/",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/gobierno_de_tarija.jpg"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/gobierno_de_tarija.jpg"
         },
 
         {
@@ -45,7 +45,7 @@
             "phone"    : "66 40450 - 6630496",
             "email"   : "",
             "webpage" : "",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/palamas.jpg"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/palamas.jpg"
         },
 
         {
@@ -57,7 +57,7 @@
             "phone"    : "4 6668399",
             "email"   : "",
             "webpage" : "",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/gamat.jpg" 
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/gamat.jpg" 
         },
 
         {
@@ -69,7 +69,7 @@
             "phone"    : "75133800",
             "email"   : "info@hotellosceibos.com",
             "webpage" : "http://www.hotellosceibos.com/newsite/",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/los_ceibos.jpg"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/los_ceibos.jpg"
         },
 
         {
@@ -81,7 +81,7 @@
             "phone"    : "4 6650888",
             "email"   : "",
             "webpage" : "https://diarionuevosur.com/contacto/",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/logo_nuevo_sur.png"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/logo_nuevo_sur.png"
         },
 
         {
@@ -93,7 +93,7 @@
             "phone"    : "6634794",
             "email"   : "",
             "webpage" : "https://www.faboce.com.bo/",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/faboce.jpg"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/faboce.jpg"
         },
 
         {
@@ -105,7 +105,7 @@
             "phone"    : "4 6631961",
             "email"   : "",
             "webpage" : "",
-            "image"    : "https://andrs4.github.io/lesson12/chamberOfCommerce/json/images/juarez.jpg"
+            "image"    : "https://andrs4.github.io/WDD230/lesson12/chamberOfCommerce/json/images/juarez.jpg"
         }
     ]
 }
